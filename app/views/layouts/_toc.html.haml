@@ -1,0 +1,6 @@
+%p
+  %b Table of Contents
+
+%ol
+  - chapters.sort.each do |chapter|
+    = render 'chapter', chapter: chapter

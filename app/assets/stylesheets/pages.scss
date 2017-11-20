@@ -1,0 +1,33 @@
+.toc-sidebar {
+  font-family: 'Nunito Sans', sans-serif;
+  border-right: solid 2px #CCC;
+  ol { padding-left: 0; }
+  ul { list-style:  disc; }
+  li.toc-chapter {
+    list-style-position:inside;
+    border-top: solid 2px #CCC;
+    margin-left: 0px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    font-weight: bolder;
+    li.toc-page {
+      font-weight: normal;
+      padding-left: 0;
+    }
+  }
+}
+
+h1 {
+  background-color: #2C98F0;
+  color: white;
+  padding: 0.5rem;
+}
+
+blockquote p {
+  padding: 1em;
+  margin: 0;
+  background-color: #d8f6fc;
+  border: solid 2px #999;
+  font-weight: bold;
+  color: #666;
+}
