@@ -2,13 +2,22 @@
   font-family: 'Nunito Sans', sans-serif;
   border-right: solid 2px #CCC;
   ol { padding-left: 0; }
-  ul { list-style:  none; margin-top: 0.5rem; }
+  ul {
+    list-style: none;
+    margin-top: 0.5rem;
+    padding-left: 2rem;
+  }
   li.toc-chapter {
     list-style-position:inside;
-    // border-top: solid 1px rgba(0, 128, 128, 0.3);
     margin-left: 0px;
     margin-top: 1em;
     margin-bottom: 2em;
+    a {
+      text-decoration: none;
+      &:hover {
+        font-weight: bold;
+      }
+    }
     font-weight: bolder;
     li.toc-page {
       font-weight: normal;
@@ -22,7 +31,7 @@ h1 {
   // background-color: #2C98F0;
   // color: white;
   padding-bottom: 0.5rem;
-  border-bottom: solid 2px rgba(0, 128, 128, 0.3);
+  border-bottom: solid 1px rgba(0, 128, 128, 0.6);
 }
 
 blockquote p {
@@ -37,7 +46,10 @@ blockquote p {
 h2 {
   margin-top: 3rem;
   padding-bottom: 4px;
-  border-bottom: solid 2px rgba(0, 128, 128, 0.3);
+  border-bottom: solid 1px rgba(0, 128, 128, 0.3);
   text-transform: uppercase;
   font-size: 22px;
+}
+.main ol p {
+  margin-bottom: 0.5em;
 }

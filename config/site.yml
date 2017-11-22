@@ -2,13 +2,16 @@ development:
   book: 'law713'
   number: 'LAWSTUDY-713'
   name: "Introduction to Software Development"
+  domain: "http://workbook.dev"
 
 test:
   book: 'law713'
   number: 'LAWSTUDY-713'
   name: "Introduction to Software Development"
+  domain: "http://workbook.dev"
 
 production:
   book: ENV['WORKBOOK_BOOK']
   number: ENV['WORKBOOK_NUMBER']
   name: ENV['WORKBOOK_NAME']
+  domain: "https://workbook.nulaw713.com"

@@ -7,10 +7,11 @@
 
   .collapse.navbar-collapse.justify-content-around#main-menu
     %ul.navbar-nav
-      - @topics.each do |topic|
+      - topics.each do |topic|
         %li.nav-item= link_to topic.sub(/\d-/,''), topic_path(topic), class: 'nav-link topic-nav-link'
 
     %ul.navbar-nav
+      %li.nav-item= link_to "Assignments", "/assignments", class: 'nav-link topic-nav-link'
       %li.nav-item= link_to "Labs", "/labs", class: 'nav-link topic-nav-link'
       %li.nav-item= link_to "Videos", "/videos", class: 'nav-link topic-nav-link'
 
