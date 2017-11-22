@@ -1,6 +1,6 @@
 %li.toc-chapter
   = link_to chapter.sub(/^\d-/, '').titleize,
-            page_path(chapter: chapter)
+            chapter_path(chapter: chapter)
   %ul
     - pages_for(chapter: chapter).each do |page|
       %li.toc-page= link_to page.sub(/^\d-/, '').sub(/\.md$/,'').titleize,

@@ -1,6 +1,6 @@
-%p
-  %b Table of Contents
+%p.bg-info.text-white.p-1
+  %b= @topic.sub(/^\d-/,'').upcase
 
 %ol
-  - chapters.sort.each do |chapter|
+  - chapters.each do |chapter|
     = render 'chapter', chapter: chapter

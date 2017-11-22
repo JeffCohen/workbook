@@ -14,4 +14,9 @@
 ActiveSupport::Inflector.inflections(:en) do |inflect|
   inflect.acronym 'RESTful'
   inflect.acronym 'HTML'
+  inflect.acronym 'OS'
+  inflect.acronym 'macOS'
+  inflect.acronym 'CRUD'
+  inflect.acronym 'URL'
+  inflect.acronym 'URLs'
 end

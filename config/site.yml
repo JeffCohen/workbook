@@ -1,0 +1,14 @@
+development:
+  book: 'law713'
+  number: 'LAWSTUDY-713'
+  name: "Introduction to Software Development"
+
+test:
+  book: 'law713'
+  number: 'LAWSTUDY-713'
+  name: "Introduction to Software Development"
+
+production:
+  book: ENV['WORKBOOK_BOOK']
+  number: ENV['WORKBOOK_NUMBER']
+  name: ENV['WORKBOOK_NAME']

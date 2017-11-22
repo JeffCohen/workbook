@@ -1,12 +1,9 @@
 class PagesController < ApplicationController
 
   def show
-    filename = @page
+    filename = current_page_local_path
     filename += ".md" unless filename.ends_with?('.md')
-    path = File.join(Rails.root, 'books',
-                    @course.local_folder,
-                    @chapter, filename)
-    @content = IO.read(path)
+    @content = IO.read(filename)
   end
 
 end

@@ -9,7 +9,7 @@ end
 gem 'ez'
 gem 'commonmarker'
 gem 'haml'
-
+gem 'awesome_print'
 
 gem 'rails', '~> 5.1.4'
 gem 'puma', '~> 3.7'

@@ -16,6 +16,10 @@
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  
+
   font-size: 18px;
+}
+
+.topic-nav-link {
+  text-transform: uppercase;
 }
