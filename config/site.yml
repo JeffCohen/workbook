@@ -3,15 +3,22 @@ development:
   number: 'LAWSTUDY-713'
   name: "Introduction to Software Development"
   domain: "http://workbook.dev"
+  canvas_course_id: "18760000000064832"
+  school: "NU"
+  # require_login: true
 
 test:
   book: 'law713'
   number: 'LAWSTUDY-713'
   name: "Introduction to Software Development"
   domain: "http://workbook.dev"
+  canvas_course_id: "18760000000064832"
+  school: "NU"
 
 production:
   book: ENV['WORKBOOK_BOOK']
   number: ENV['WORKBOOK_NUMBER']
   name: ENV['WORKBOOK_NAME']
   domain: "https://workbook.nulaw713.com"
+  canvas_course_id: "18760000000064832"
+  school: "NU"

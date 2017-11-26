@@ -19,40 +19,47 @@ module Canvas
     course['enrollments'].first['role'] == 'TeacherEnrollment'
   end
 
-  def students_for(course_id)
-    data = run_canvas_api("/courses/#{course_id}/users?enrollment_state\\[\\]=active")
-    # data.map { |user| user['login'] }
+  def student_in?(net_id, school_name, course_id)
+    logger.debug("student_in?(#{net_id}, #{school_name}, #{course_id})")
+
+    logins = students_for(school_name, course_id).map { |user| user['login_id'] }
+    logins.detect { |student_id| student_id == net_id }
   end
 
-  def canvas_courses(pluck = nil)
-    all_courses = run_canvas_api('/courses')
+  def students_for(school_name, course_id)
+    run_canvas_api(school_name, "/courses/#{course_id}/users?enrollment_state\\[\\]=active")
+  end
+
+  def canvas_courses(school_name, pluck = nil)
+    all_courses = run_canvas_api(school_name, '/courses')
     all_courses.select { |course| teaching?(course) }.map do |course|
       pluck ? course[pluck.to_s] : course
     end
   end
 
-  def run_canvas_api(api_endpoint)
+  def run_canvas_api(school_name, api_endpoint)
     if api_endpoint =~ /\?/
       api_endpoint += "&per_page=100"
     else
       api_endpoint += "?per_page=100"
     end
 
-    SCHOOLS.map do |school|
-      token = school[:token]
-      puts token
-      cmd = "curl -sH \"Authorization: Bearer #{token}\" 'https://canvas.instructure.com/api/v1#{api_endpoint}'"
-      puts cmd
-      json = `#{cmd}`
-      data = JSON.parse(json)
-      # puts data.class
-      # puts data
-      if data.is_a?(Hash) && data['errors']
-        puts data['errors'].map { |m| m['message']}.join('. ')
-        data = nil
-      end
-      data
-    end.compact.reduce(:+)
+    school = SCHOOLS.detect { |s| s[:name] == school_name}
+    # logger.debug("School: #{school}")
+    token = school[:token]
+    puts token
+    # logger.debug("Token: #{token}")
+    cmd = "curl -sH \"Authorization: Bearer #{token}\" 'https://canvas.instructure.com/api/v1#{api_endpoint}'"
+    puts cmd
+    json = `#{cmd}`
+    data = JSON.parse(json)
+    # logger.debug data.class
+    # logger.debug data
+    if data.is_a?(Hash) && data['errors']
+      puts data['errors'].map { |m| m['message']}.join('. ')
+      data = nil
+    end
+    data
   end
 
 end

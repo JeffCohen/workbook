@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   %w(assignments labs videos).each do |r|
     resources r, only: [:index, :show]
   end
+
+  resources :sessions
+
   get ':topic(/:chapter)(/:page)' => 'pages#show'
 
 

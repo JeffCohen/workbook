@@ -24,7 +24,7 @@ module ApplicationHelper
 
   def pages_for(topic: nil, chapter:)
     path = File.join(Rails.root, 'books', Rails.configuration.site['book'], topic || @topic, chapter, '*')
-    Dir.glob(path).map { |f| File.basename(f) }.sort
+    Dir.glob(path).map { |f| File.basename(f, '.md') }.sort
   end
 
   def chapters(topic: nil)

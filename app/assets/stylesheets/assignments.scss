@@ -1,0 +1,5 @@
+.table-clickable {
+  tbody tr[data-href] {
+    cursor: pointer;
+  }
+}

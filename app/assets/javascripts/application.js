@@ -15,3 +15,4 @@
 //= require turbolinks-jquery
 //= require highlight
 //= require markdown
+//= require assignments

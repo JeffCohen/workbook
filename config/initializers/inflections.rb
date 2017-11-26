@@ -19,4 +19,6 @@ ActiveSupport::Inflector.inflections(:en) do |inflect|
   inflect.acronym 'CRUD'
   inflect.acronym 'URL'
   inflect.acronym 'URLs'
+  inflect.acronym 'TBA'
+  inflect.acronym 'GitHub'
 end

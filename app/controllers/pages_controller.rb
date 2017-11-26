@@ -4,6 +4,12 @@ class PagesController < ApplicationController
   before_action :set_defaults
 
 
+  def parse_params
+    @topic = params[:topic]&.downcase
+    @chapter = params[:chapter]&.downcase
+    @page = params[:page]&.downcase
+  end
+
   def set_defaults
     @topic   ||= topics.first
     @chapter ||= first_file(course['book'], @topic)
@@ -14,12 +20,6 @@ class PagesController < ApplicationController
 
   def current_page_local_path
     @current_page_local_path ||= File.join(Rails.root, 'books', course['book'], @topic, @chapter, @page)
-  end
-
-  def parse_params
-    @topic = params[:topic]&.downcase
-    @chapter = params[:chapter]&.downcase
-    @page = params[:page]&.downcase
   end
 
   def show

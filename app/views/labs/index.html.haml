@@ -1,10 +1,10 @@
 %h1
-  Assignments
+  Labs
 
 
 .row
   .col-sm-12.table-responsive
-    %p.text-muted.float-right Assignments are unlocked over time.
+    %p.text-muted.float-right Labs are unlocked over time.
     %table.table.table-clickable
 
       %thead
@@ -14,15 +14,15 @@
           %th Title
 
       %tbody
-        - @assignments.each_with_index do |assignment, index|
+        - @labs.each_with_index do |lab, index|
 
           - if index + 1 <= @unlock
-            %tr.text-primary{data: {href: "/assignments/#{assignment}"}}
+            %tr.text-primary{data: {href: "/labs/#{lab}"}}
               %td= index + 1
               %td Week #{(index+1) * 2}
-              %td #{assignment.sub(/^\d+\-/,'').titleize}
+              %td #{lab.sub(/^\d+\-/,'').titleize}
           - else
             %tr.text-muted
               %td= index + 1
               %td Week #{(index+1) * 2}
-              %td #{assignment.sub(/^\d+\-/,'').titleize}
+              %td #{lab.sub(/^\d+\-/,'').titleize}

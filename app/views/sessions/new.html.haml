@@ -1,0 +1,6 @@
+.row.justify-content-center
+  .col-sm-6
+    = bootstrap_form_tag url: '/sessions' do |f|
+      = f.text_field :netid, label: 'Sign In with Your NetID', autofocus: true,
+                             class: 'form-control'
+      = f.submit 'Sign In', class: 'btn-primary'
