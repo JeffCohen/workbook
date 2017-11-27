@@ -1,9 +1,8 @@
 class AssignmentsController < ApplicationController
 
   def index
-    @unlock = 1
+    @unlock_week = course['assignment_unlock_week']
     @assignments = appendix(:assignments)
-    logger.debug @assignments
   end
 
   def show

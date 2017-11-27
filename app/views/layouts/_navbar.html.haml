@@ -12,11 +12,11 @@
           %li.nav-item= link_to topic.sub(/\d-/,''), topic_path(topic), class: 'nav-link topic-nav-link'
 
       %ul.navbar-nav
-        %li.nav-item= link_to "Assignments", "/assignments", class: 'nav-link topic-nav-link'
-        %li.nav-item= link_to "Labs", "/labs", class: 'nav-link topic-nav-link'
-        %li.nav-item= link_to "Videos", "/videos", class: 'nav-link topic-nav-link'
+        - appendices.each do |appendix|
+          - title = appendix.sub(/^\d*\-/,'')
+          %li.nav-item= link_to title.capitalize, "/#{title.pluralize}", class: 'nav-link topic-nav-link'
 
-      - if Rails.configuration.site['require_login']
+      - if course['require_login']
         %ul.navbar-nav
           %li.nav-item= link_to "Sign Out", "/sessions/1", method: :delete, class: 'nav-link topic-nav-link'
 

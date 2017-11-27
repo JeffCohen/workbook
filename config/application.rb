@@ -19,6 +19,6 @@ Bundler.require(*Rails.groups)
 module Workbook
   class Application < Rails::Application
     config.load_defaults 5.1
-    config.site = config_for(:site)
+    config.site = config_for(:site) rescue nil
   end
 end

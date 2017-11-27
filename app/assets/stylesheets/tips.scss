@@ -1,0 +1,13 @@
+.tip {
+  font-size: 62px;
+  font-family: 'Crimson Text', serif;
+  height: 60vh;
+  // color: #CCC;
+  color: rgba(0, 128, 128, 0.3);
+
+  .tiny {
+    font-size: 22px;
+    font-style: italic;
+    color: rgba(0, 128, 128, 0.4);
+  }
+}

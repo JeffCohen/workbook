@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
   skip_before_action :require_login if Rails.configuration.site['require_login']
 
   def new
-    redirect_to root_url unless Rails.configuration.site['require_login']
+    redirect_to root_url unless course['require_login']
   end
 
   def create
@@ -23,8 +23,7 @@ class SessionsController < ApplicationController
   private
 
   def find_student(netid)
-    student_in?(netid, Rails.configuration.site['school'],
-                       Rails.configuration.site['canvas_course_id'])
+    student_in?(netid, course['school'], course['canvas_course_id'])
   end
 
 end

@@ -1,5 +1,8 @@
-.table-clickable {
-  tbody tr[data-href] {
-    cursor: pointer;
+.assignments {
+
+  .table-clickable {
+    tbody tr[data-href] {
+      cursor: pointer;
+    }
   }
 }

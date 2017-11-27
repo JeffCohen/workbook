@@ -1,28 +1,29 @@
-%h1
-  Assignments
+.row.justify-content-center
+  .col-sm-6.assignments
+    %h1
+      Assignments
+    %p.text-muted.float-right
+      %em Assignments are unlocked over time.
 
+    .table-responsive
+      %table.table.table-clickable
 
-.row
-  .col-sm-12.table-responsive
-    %p.text-muted.float-right Assignments are unlocked over time.
-    %table.table.table-clickable
+        %thead
+          %tr
+            %th #
+            %th Due
+            %th Title
 
-      %thead
-        %tr
-          %th #
-          %th Due
-          %th Title
-
-      %tbody
-        - @assignments.each_with_index do |assignment, index|
-
-          - if index + 1 <= @unlock
-            %tr.text-primary{data: {href: "/assignments/#{assignment}"}}
-              %td= index + 1
-              %td Week #{(index+1) * 2}
-              %td #{assignment.sub(/^\d+\-/,'').titleize}
-          - else
-            %tr.text-muted
-              %td= index + 1
-              %td Week #{(index+1) * 2}
-              %td #{assignment.sub(/^\d+\-/,'').titleize}
+        %tbody
+          - @assignments.each_with_index do |assignment, index|
+            - /^(?<due_week>\d+)\-(?<title>.+$)/ =~ assignment
+            - if due_week.to_i <= @unlock_week.to_i
+              %tr.text-primary{data: {href: "/assignments/#{assignment}"}}
+                %td= index + 1
+                %td Week #{due_week}
+                %td #{title.titleize}
+            - else
+              %tr.text-muted
+                %td= index + 1
+                %td Week #{due_week}
+                %td #{title.titleize}

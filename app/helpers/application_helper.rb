@@ -23,13 +23,13 @@ module ApplicationHelper
   end
 
   def pages_for(topic: nil, chapter:)
-    path = File.join(Rails.root, 'books', Rails.configuration.site['book'], topic || @topic, chapter, '*')
+    path = File.join(Rails.root, 'books', course['book'], topic || @topic, chapter, '*')
     Dir.glob(path).map { |f| File.basename(f, '.md') }.sort
   end
 
   def chapters(topic: nil)
     @chapters ||= begin
-      path = File.join(Rails.root, 'books', Rails.configuration.site['book'], topic || @topic, '*')
+      path = File.join(Rails.root, 'books', course['book'], topic || @topic, '*')
       folders = Dir.glob(path).select {|f| File.directory? f}
       folders.map { |f| File.basename(f) }.sort
     end
