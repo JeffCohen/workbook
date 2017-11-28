@@ -45,24 +45,3 @@ irb(main)> fruits = ["apple", "banana", "cookies"]
 irb(main)> fruits.class
 => Array
 ```
-
-
-## Methods
-
-You've probably noticed the "dot operator" by now.  Sometimes we use a period followed by the name of a _method_, like this:
-
-``` irb
-irb(main)> "hello".capitalize
-=> "Hello"
-```
-
-The period character, commonly known as the "dot", combines an _object_ with a _method_.  
-
-* An object is what's on the left side of the dot: a variable or a 
-literal value
-* A method is a function that operates upon the object in some way.
-
-In the previous example, the `capitalize` method performs work upon
-the String object `"hello"`.
-
-The result of this work &mdash; the string `"Hello"` &mdash; is the result of evaluating the entire expression `"hello".capitalize`.
