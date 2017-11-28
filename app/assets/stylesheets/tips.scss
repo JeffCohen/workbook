@@ -1,13 +1,25 @@
 .tip {
+  a, a:visited {
+    color: rgba(0, 128, 128, 0.4);
+    text-decoration: none;
+  }
   font-size: 48px;
   font-family: 'Crimson Text', serif;
   height: 60vh;
-  // color: #CCC;
   color: rgba(0, 128, 128, 0.3);
 
   .tiny {
     font-size: 22px;
     font-style: italic;
     color: rgba(0, 128, 128, 0.4);
+  }
+}
+
+.tip-list {
+  height: 80vh;
+  ol li {
+    font-size: 36px;
+    list-style-position: inside;
+    line-height: 68px;
   }
 }

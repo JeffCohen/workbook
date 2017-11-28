@@ -8,6 +8,10 @@ class TipsController < ApplicationController
           "Explain your problem to somebody else.",
           "Read more than you write."]
 
+  def index
+    @tips = TIPS
+  end
+  
   def show
     @tip = TIPS.sample
   end
