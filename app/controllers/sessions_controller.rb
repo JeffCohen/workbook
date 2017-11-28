@@ -23,7 +23,7 @@ class SessionsController < ApplicationController
   private
 
   def find_student(netid)
-    student_in?(netid, course['school'], course['canvas_course_id'])
+    student_in?(netid, book['school'], book['canvas_course_id'])
   end
 
 end

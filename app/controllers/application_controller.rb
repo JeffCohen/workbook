@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
   end
 
   helper_method :course
+  helper_method :book
   helper_method :topics
   helper_method :current_user
   helper_method :logged_in?
@@ -60,8 +61,11 @@ class ApplicationController < ActionController::Base
     numbered_files(folders).first
   end
 
+  def book
+    Rails.configuration.book
+  end
+
   def course
-    logger.debug("Getting course...")
     Rails.configuration.site || { 'number' => 'COURSE WORKBOOK' }
 
   rescue => e

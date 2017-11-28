@@ -1,28 +1,14 @@
 development:
   book: 'law713'
-  number: 'LAWSTUDY-713'
-  name: "Introduction to Software Development"
-  domain: "http://workbook.dev"
-  canvas_course_id: "18760000000064832"
-  school: "NU"
   assignment_unlock_week: 2
   # require_login: true
 
 test:
   book: 'law713'
-  number: 'LAWSTUDY-713'
-  name: "Introduction to Software Development"
-  domain: "http://workbook.dev"
-  canvas_course_id: "18760000000064832"
-  school: "NU"
   assignment_unlock_week: 2
+  # require_login: true
 
 production:
-  book: 'law713'
-  number: 'LAWSTUDY-713'
-  name: "Introduction to Software Development"
-  domain: "http://workbook.dev"
-  canvas_course_id: "18760000000064832"
-  school: "NU"
-  assignment_unlock_week: 2
-  
+  book: <%= ENV['BOOK'] %>
+  assignment_unlock_week: <%= ENV['BOOK_ASSIGNMENT_UNLOCK_WEEK'] %>
+  require_login: <%= ENV["BOOK_REQUIRE_LOGIN"].present? %>

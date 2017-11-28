@@ -24,7 +24,7 @@ Select the following preferences:
 
 2. First, we need to install a tool called Homebrew:
 
-   `/usr/bin/ruby -e "$(curl -fsSL <%= course['domain'] %>/macsetup1)"`
+   `/usr/bin/ruby -e "$(curl -fsSL <%= request.domain %>/macsetup1)"`
 
    Just follow the on-screen instructions that appear.
 
