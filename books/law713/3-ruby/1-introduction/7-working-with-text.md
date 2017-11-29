@@ -59,13 +59,21 @@ irb(main)> "Roses are red\nViolets are blue\nRuby is cool\nAnd so are you\n"
 ```
 
 Hmmm, that didn't seem to do anything special yet, but they will take effect
-when we use the `print` statement:
+when we use the `print` function:
+
 
 ``` irb
-irb(main)> print "Roses are red\nViolets are blue\nRuby is cool\nAnd so are you\n"
+irb(main)> print("Roses are red\nViolets are blue\nRuby is cool\nAnd so are you\n")
 Roses are red
 Violets are blue
 Ruby is cool
 And so are you
 => nil
 ```
+
+<div class="alert alert-primary" role="alert">
+  When using functions like print()</code>,
+  make sure the first parenthesis is tight against
+  the function name without any spaces:  &nbsp;
+  <code>print()</code>  &nbsp; not &nbsp; <code>print&nbsp;&nbsp;()</code>.
+</div>

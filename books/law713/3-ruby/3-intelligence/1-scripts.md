@@ -50,7 +50,7 @@ ruby lucky.rb
 and you should see something like:
 
 ```
-Today's lucky number is: 25"
+Today's lucky number is: 25
 ```
 
 Run it again to see different numbers appear.
