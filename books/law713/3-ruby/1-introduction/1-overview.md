@@ -7,9 +7,8 @@ scale, industrial-strength applications. The language continues
 to improve and evolve over time.  The current version of Ruby is 2.4.
 Ruby is used behind the scenes to power large websites and web applications like Basecamp, Hulu, Amazon, Kickstarter, YellowPages.net, and more.  However, Ruby is different from HTML.
 
-While HTML provides instructions for a web browser (like Chrome, Edge,
-Safari, or Firefox),  Ruby provides instructions
-directly to a computer.  Ruby can perform computations,
+Unlike HTML which provides instructions for the browser,  Ruby provides
+instructions directly to a computer.  Ruby programs can perform computation,
 modify documents, communicate with other computers, give you
 directions to the ballgame, check the weather outside, and more.  
 

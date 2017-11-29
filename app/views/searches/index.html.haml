@@ -1,0 +1,12 @@
+%h1
+  Searching for
+  %em #{params[:term]}
+
+
+.row
+  .col-sm-12
+    %dl
+      - @results.each do |result|
+        - /^books\/[^\/]+\/(?<filename>.+)\.md:(?<line>\d+):(?<extract>.+$)/ =~ result
+        %dt= link_to filename.gsub(/\d+\-/,'').gsub(/\//, ' > ').titleize, filename
+        %dd= highlight(extract, params[:term])
