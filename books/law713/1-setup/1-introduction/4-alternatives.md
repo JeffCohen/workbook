@@ -41,9 +41,10 @@ account to sign in, so that you can save your work)
 
 ## Rails
 
-The only viable option that I know of is [Clould9](https://c9.io).  
+The only viable option that I know of is [Cloud9](https://c9.io).  
 
-Sign up requires a credit card but you can stay on the free plan so you're never actually charged.
+Sign up requires a credit card but you can remain on the free plan, so your card
+will never actually be charged.
 
-If recommend scheduling an appointment with me so that
+If you need to use use Cloud9, schedule an appointment with me so that
 I can give you a brief orientation to Cloud9.

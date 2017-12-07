@@ -1,4 +1,4 @@
-# Else
+# `else`
 
 We can also specify what should happen when the comparison provided
 in the `if` statement evaulates to `false`:

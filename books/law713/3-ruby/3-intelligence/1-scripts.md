@@ -25,23 +25,21 @@ lucky_number = rand(20)
 print "Today's lucky number is: #{lucky_number}. \n"
 ```
 
-
-
 Save it with the filename `lucky.rb` in a folder that's easy for your command
 prompt to get to, like `~/code/` (macOS) or `C:/code` (Windows).  
 
 > We use the `.rb` file extension to remind ourselves that the file contains Ruby code.
 
-Go to your command line, and if you aleady have `irb` running, you can
-exit it now:
+If you already have `irb` running in your command prompt, you should
+exit it now to get back to your command line:
 
 ``` irb
 irb(main)> exit
 ```
 
-or you can press `CTRL-D` to exit.
+(or you can press `CTRL-D` to exit.)
 
-Now you can run you Ruby script directly from your command prompt like this:
+Now, run your Ruby script directly from your command line, like this:
 
 ```
 ruby lucky.rb
@@ -55,7 +53,5 @@ Today's lucky number is: 25
 
 Run it again to see different numbers appear.
 
-If you see something completely different, then Ruby is trying to display
-an error message so you can fix your code.  Read the error message slowly
-to get clues on what went wrong.  Fix you code, save your file, and try to
-run it again.
+If you see something completely different, Ruby probably couldn't
+understand your code and displayed an error message instead.  Don't panic - this happens to all of us with great frequency.  Just read the error message slowly to get clues on what went wrong. Fix your code, save your file, and try to run it again.

@@ -1,4 +1,4 @@
-# If
+# `if`
 
 We now arrive at one of the most powerful parts of Ruby: the `if` statement.
 
