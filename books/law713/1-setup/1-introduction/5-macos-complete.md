@@ -1,46 +1,10 @@
-# Setup on macOS
+# Setup on macOS: Complete
 
-## STEP 1: GitHub Account (5 minutes)
+Be sure to do the the [First Day Setup](/1-setup/1-introduction/2-first-day:-macos) before proceeding.
 
-1. Head over to [GitHub](https://www.github.com) and sign up for a free account.
-2. While you're still signed in, go to your [Settings](https://github.com/settings/profile) and select your NU email
-address to be your **Public email** address, _then scroll down and click
-the **Update profile** button_.
+This entire process will take about 40 minutes.  
 
-## STEP 2: Install a Text Editor (5 minutes)
-
-Download Atom from [atom.io](atom.io)
-
-Start it up, go to Preferences
-
-Select the following preferences:
-
-* autosave
-
-
-## STEP 3: Install software development tools
-
-1. Launch the **Terminal** app.
-
-2. First, we need to install a tool called Homebrew:
-
-   `/usr/bin/ruby -e "$(curl -fsSL <%= request.domain %>/macsetup1)"`
-
-   Just follow the on-screen instructions that appear.
-
-   If all goes well, in about 10 minutes, you'll see a notice saying
-   "Installation Successful!"
-
-3. Now let's setup the Git version control tool.  Substitute your name
-   and your NU email address below.
-
-   ```
-   git config --global color.ui true
-   git config --global user.name "YOUR NAME"
-   git config --global user.email "YOUR@EMAIL.com"
-   ```
-
-## STEP 3: Install the Ruby on Rails Environment (45 minutes)
+## STEP 1: Install the Ruby on Rails Environment
 
 
 3. We can now install a tool called **rbenv**:
@@ -74,7 +38,7 @@ Select the following preferences:
    gem install rails
    ```
 
-## STEP 4: Verification
+## STEP 2: Verification
 
 1. Let's create a directory named **code** in your Home folder:
 
@@ -100,5 +64,18 @@ Select the following preferences:
 
    If you see a web page that says "Yay! " then you are all done!
 
-
    Finally, come back to the command prompt and press CTRL-C to stop the webserver.
+
+## STEP 3: Configure Version Control
+
+And finally, let's setup your Git version control system.
+
+Substitute your name and your NU email address below.
+
+   ```
+   git config --global color.ui true
+   git config --global user.name "YOUR NAME"
+   git config --global user.email "YOUR@EMAIL.com"
+   ```
+
+Congratulations, you're all set!

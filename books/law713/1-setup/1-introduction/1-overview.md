@@ -4,15 +4,18 @@ Every software engineer uses a set of tools necessary for constructing
 software.  This toolset is called a _development environment_, and
 the it can be daunting to set up an environment for the very first time.
 
-The key to success in setting up your environment is to work slowly,
-attentively, and methodically.  You should expect
-it to take about an hour to get your environment setup.  Any issues
-that arise are usually solvable, but if you're not paying attention
-or if you are trying to speed through the process, you'll just make matters worse.
+You don't need to install everything before the first day of class,
+but in order to follow along on the first day, do one of the following:
 
-Specific instructions vary depending on whether you're using Windows or macOS.
 
-Choose your adventure:
+* [First Day Setup Instructions for Windows](/1-setup/1-introduction/2-first-day:-windows) or
+* [First Day Setup Instructions for macOS](/1-setup/1-introduction/3-first-day:-macos).
 
-* <%= link_to_page '2-windows' %>
-* <%= link_to_page '3-macOS' %>
+Then, prior to Week 2, you should also complete your setup with:
+
+* [Windows Complete Setup](/1-setup/1-introduction/4-windows-complete/) or
+* [macOS Complete Setup](/1-setup/1-introduction/5-macos-complete/).
+
+If neither of these work, let me know and also see the section on [Alternatives]('6-alternatives').
+
+([Stuck and need help?]('7-getting-help'))
