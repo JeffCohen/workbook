@@ -7,4 +7,5 @@ $(function() {
   $('pre[lang]').each(function(i, block) {
     hljs.highlightBlock(block);
   });
+  $('.draft h1').append('<img class="img-fluid float-right" src="/draft.png">');
 })

@@ -1,12 +1,19 @@
 %h1
-  Searching for
-  %em #{params[:term]}
+  Search Results for:
+  %code #{params[:term]}
 
+- if @chapters.any?
+  %h3
+    = pluralize(@chapters.count, 'chapter')
+    found:
+- else
+  %h3 No occurrences could be found.
 
 .row
   .col-sm-12
-    %dl
-      - @results.each do |result|
-        - /^books\/[^\/]+\/(?<filename>.+)\.md:(?<line>\d+):(?<extract>.+$)/ =~ result
-        %dt= link_to filename.gsub(/\d+\-/,'').gsub(/\//, ' > ').titleize, filename
-        %dd= highlight(extract, params[:term])
+    %ul
+      - @chapters.each do |chapter|
+        %li= link_to chapter.sub(/appendix\//,'').gsub(/\d+\-/,'').gsub(/\//, ' > ').titleize, chapter
+
+:javascript
+  $('input').focus()

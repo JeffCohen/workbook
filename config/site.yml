@@ -1,5 +1,9 @@
 development:
   book: 'law713'
+  draft:
+    - '2-html'
+    - '4-rails'
+    - '4-loops'
   assignment_unlock_week: 2
   # require_login: true
 
@@ -12,3 +16,7 @@ production:
   book: <%= ENV['BOOK'] %>
   assignment_unlock_week: <%= ENV['BOOK_ASSIGNMENT_UNLOCK_WEEK'] %>
   require_login: <%= ENV["BOOK_REQUIRE_LOGIN"].present? %>
+  draft:
+    - '2-html'
+    - '4-rails'
+    - '4-loops'
