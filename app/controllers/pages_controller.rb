@@ -2,8 +2,7 @@ class PagesController < ApplicationController
 
   before_action :parse_params
   before_action :set_defaults
-  before_action :check_for_draft_status
-
+  before_action :check_for_special_status
 
   def parse_params
     @topic = params[:topic]&.downcase
@@ -25,12 +24,17 @@ class PagesController < ApplicationController
     @current_page_local_path ||= File.join(Rails.root, 'books', course['book'], @topic, @chapter, @page)
   end
 
-  def check_for_draft_status
-    @draft = course['draft'].include?(@topic)
-    @draft ||= course['draft'].include?(@chapter)
-    @draft ||= course['draft'].include?(@page)
-    
-    Rails.logger.info "@draft: #{@draft}"
+  def check_for(status)
+    return false unless course[status]
+    flagged = course[status].include?(@topic)
+    flagged ||= course[status].include?(@chapter)
+    flagged ||= course[status].include?(@page)
+    flagged
+end
+
+  def check_for_special_status
+    @draft = check_for 'draft'
+    @coming_soon = check_for 'coming_soon'
   end
 
   def show
