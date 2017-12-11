@@ -1,6 +1,6 @@
 # Setup on macOS: First Day
 
-This chapter will prepare you for the first day of class.
+This page will prepare you for the first day of class.
 
 ## STEP 0: Update to High Sierra or Sierra
 
@@ -34,10 +34,20 @@ takes a day or two.  Watch your inbox for a confirmation email.
 address to be your **Public email** address, _then scroll down and click
 the **Update profile** button_.
 
+<p><a href="https://www.evernote.com/l/AAZiKCcCKHRD9bIGWzdNhltwnvnR85lRyV8B/image.png">
+<img width="400px" src="https://www.evernote.com/l/AAZiKCcCKHRD9bIGWzdNhltwnvnR85lRyV8B/image.png">
+</a></p>
+
+
+While you're waiting for your educational discount to be confirmed,
+you can continue with the remaining steps.
+
 ## STEP 3: Install a Text Editor (5 minutes)
 
 Install Atom from [atom.io](atom.io).  Once installed, it should automatically
-launch.  You can uncheck the "Always Show This Welcome Page" option and close
+launch.  
+
+You can uncheck the "Always Show This Welcome Page" option and close
 all of the tabs.
 
 Turn on the Autosave feature:

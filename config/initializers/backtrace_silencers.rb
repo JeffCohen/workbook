@@ -15,4 +15,4 @@ module ActionDispatch
 end
 
 
-AwesomePrint.irb!
+# AwesomePrint.irb!
