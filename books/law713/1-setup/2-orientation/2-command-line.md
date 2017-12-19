@@ -1,7 +1,7 @@
-# The Linux Command Line
+# The Command Line
 
 Sometimes, we use the command line (or "command prompt") to send instructions
-to the computer instead of using an application.
+to the computer instead of using a visual application.
 
 To open the command line:
 

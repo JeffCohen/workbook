@@ -44,7 +44,7 @@ you can continue with the remaining steps.
 
 ## STEP 3: Install a Text Editor (5 minutes)
 
-Install Atom from [atom.io](atom.io).  Once installed, it should automatically
+Install Atom from [atom.io](https://atom.io).  Once installed, it should automatically
 launch.  
 
 You can uncheck the "Always Show This Welcome Page" option and close

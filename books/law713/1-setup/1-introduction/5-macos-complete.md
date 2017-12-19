@@ -2,19 +2,19 @@
 
 Be sure to do the the [First Day Setup](/1-setup/1-introduction/2-first-day:-macos) before proceeding.
 
-This entire process will take about 40 minutes.  
+This entire process will take about 30 minutes.  
 
 ## STEP 1: Install the Ruby on Rails Environment
 
 
-3. We can now install a tool called **rbenv**:
+1. We can now install a tool called **rbenv**:
 
    ```
    brew install rbenv ruby-build
    ```
 
-4. And now we install the Ruby programming language interpreter.
-   Just copy and paste each line, one at a time:
+2. And now we install the Ruby programming language interpreter.
+   Copy and paste each line below, one at a time, pressing [Enter] after each one:
 
    ```
    echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi'  >>~/.bash_profile
@@ -26,7 +26,7 @@ This entire process will take about 40 minutes.
 
    At this point you should see some output starting with **ruby 2.4.2....** or something similar.  If not, ask for help, because the next step won't work.
 
-5. Assuming everything is good so far, we can install Rails:
+5. Assuming everything is good so far, we can install Rails.  Enter your computer password if prompted.
 
    ```
    echo "export GEM_HOME=$HOME/.gem/ruby/2.4.0" >> ~/.bashrc

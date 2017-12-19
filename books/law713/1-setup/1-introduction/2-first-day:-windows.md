@@ -9,7 +9,8 @@ Make sure you have the latest version of Windows.  Here's a screenshot of what t
 <img class="border rounded border-primary img-fluid img-rounded" src="https://www.evernote.com/l/AAawglvdCNxOE47VFGag52rjbJa-0sy3U8MB/image.png"
      width="500px">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GFC1e2DKbfE" frameborder="0" iv_load_policy="3" controls="0" modestbranding="1" rel="0" showinfo="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<%= video_for "GFC1e2DKbfE" %>
+
 
 
 ## STEP 1: Install Google Chrome
@@ -30,16 +31,14 @@ takes a day or two.  Watch your inbox for a confirmation email.
 address to be your **Public email** address, _then scroll down and click
 the **Update profile** button_.
 
-<p><a href="https://www.evernote.com/l/AAZiKCcCKHRD9bIGWzdNhltwnvnR85lRyV8B/image.png">
-<img width="400px" src="https://www.evernote.com/l/AAZiKCcCKHRD9bIGWzdNhltwnvnR85lRyV8B/image.png">
-</a></p>
+<%= thumbnail_for 'https://www.evernote.com/l/AAZiKCcCKHRD9bIGWzdNhltwnvnR85lRyV8B/image.png' %>
 
 While you're waiting for your educational discount to be confirmed,
 you can continue with the remaining steps.
 
 ## STEP 3: Install a Text Editor (5 minutes)
 
-Install Atom from [atom.io](atom.io).  Once installed, it should automatically
+Install Atom from [atom.io](https://atom.io).  Once installed, it should automatically
 launch.  
 
 You can uncheck the "Always Show This Welcome Page" option and close
@@ -57,15 +56,14 @@ Turn on the Autosave feature:
 
 ## STEP 4: Install Ubuntu-on-Windows
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vFa3-fgbTFU" frameborder="0" iv_load_policy="3" controls="0" modestbranding="1" rel="0" showinfo="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<%= video_for "vFa3-fgbTFU" %>
 
 First, click `Start` and then the `Settings` gear, then search for "Turn Windows Features
 On or Off".  This should bring up another dialog box.  Scroll the bottom
 and check the box that says "Windows Subsystem for Linux".  Then click `OK`
 and then click `Restart`.
 
-<img class="border rounded border-primary img-fluid img-rounded" src="https://www.evernote.com/l/AAYKr6dLBkRMibTbRyRLys7LlmOAGp2yIXkB/image.png"
-     width="500px">
+<%= image_for "https://www.evernote.com/l/AAYKr6dLBkRMibTbRyRLys7LlmOAGp2yIXkB/image.png" %>
 
 
 When your computer has restarted and is ready again, go to the Microsoft Store
