@@ -3,8 +3,8 @@
 Tables are helpful for displaying numerical or tabular data sets.
 
 Tables typically have a _head_ and a _body_.  The head consists
-of _rows_ `tr` (usually just one) and _header columns_ `th`.  
-The body consists of rows and _table data_ `td`.
+of _rows_ `tr` (usually just one) and _header columns_ `th`.  The body
+consists of rows and _table data_ `td`.
 
 > Tables look terrible without some visual styling. We've applied
 some styling to the example table.
