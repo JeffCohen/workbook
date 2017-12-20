@@ -29,3 +29,7 @@ pre:not([lang]), .code {
   border: solid 1px #DDD;
   padding: 0.5em;
 }
+
+@media print {
+    .no-print {display: none;}
+}
