@@ -6,7 +6,7 @@ Quick facts:
 
 * HTML stands for Hypertext Markup Language.  Invented in the early 1990's,
   researchers were looking for a way plain-text documents to contain
-  "hyperlinks," a new invention to replace footnots. Hyperlinks allowed
+  "hyperlinks," a new invention to replace footnotes. Hyperlinks allowed
   readers to simply click a word to have the relevant cross-referenced
   document loaded, rather than having old-style footnotes at the bottom
   of the page or chapter.
