@@ -13,11 +13,11 @@ Make sure you have the latest version of Windows.  Here's a screenshot of what t
 
 
 
-## STEP 1: Install Google Chrome
+## STEP 1: Install Google Chrome (Optional)
 
 You can get it from https://www.google.com/chrome/. This step is actually optional,
 but I'll be using Chrome in class.  If you decide to use Edge, Firefox, or Safari,
-just know that some things might look slightly different.  
+just know that some things might look a little different.  
 
 
 ## STEP 2: GitHub Account (5 minutes)
@@ -54,7 +54,7 @@ Turn on the Autosave feature:
 4. Click the small `Settings` button in the package widget.
 5. Check the box that says `Enabled`
 
-## STEP 4: Install Ubuntu-on-Windows
+## STEP 4: Install Ubuntu-on-Windows (2 minutes)
 
 <%= video_for "vFa3-fgbTFU" %>
 

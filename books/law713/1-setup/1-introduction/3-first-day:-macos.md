@@ -16,7 +16,7 @@ Use the AppStore to update if necessary (be sure to backup your important files 
 
 If you are unable to update to Sierra or High Sierra, let me know.
 
-## STEP 1: Install Google Chrome
+## STEP 1: Install Google Chrome (Optional)
 
 You can get it from https://www.google.com/chrome/. This step is actually optional,
 but I'll be using Chrome in class.  If you decide to use Edge, Firefox, or Safari,
