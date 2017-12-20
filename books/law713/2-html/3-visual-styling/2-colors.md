@@ -34,6 +34,9 @@ Refresh your browser again, and notice the difference.
 Congratulations, your `h1` element is now the ugliest heading
 on the internet.
 
+<img width="600" src="https://www.evernote.com/l/AAYCRZ400PFLyI7-o8XSDEera0cpKIlBMt0B/image.png">
+
+## Rule Definition
 
 A rule consists of a _selector_ followed by a series of
 _properties_.  Each property must end with a semicolon.
