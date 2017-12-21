@@ -41,18 +41,32 @@ Copy and paste each line below as shown, pressing [Enter] after each one.
    gem install rails
    ```
 
-## STEP 2: Verification
+## STEP 2: Configure Version Control
 
-1. Let's create a directory named **code** in your Home folder:
+Let's setup your Git version control system.
+
+Run these commands from your command prompt, but of course substitute your name and your NU email address below.
+
+   ```
+   git config --global color.ui true
+   git config --global user.name "YOUR NAME"
+   git config --global user.email "YOUR-EMAIL@nlaw.northwestern.edu"
+   ```
+
+
+## STEP 3: Verification
+
+1. Create a directory named **code** in your Home folder:
 
    > That ~ symbol is the _tilde_, which is in the upper-left of your Mac keyboard.
 
    ```
    cd ~
    mkdir code
+   echo "cd ~/code" >> ~/.bash_profile
    ```
 
-2. Let's generate a sample Rails application:
+2. Finally, let's generate a sample Rails application:
 
    ```
    cd ~/code
@@ -61,7 +75,7 @@ Copy and paste each line below as shown, pressing [Enter] after each one.
    After a minute, you should see a green message that everything was successful.  Then:
 
    ```
-   cd ~/code/sample
+   cd sample
    rails server
    ```
 
@@ -69,18 +83,4 @@ Copy and paste each line below as shown, pressing [Enter] after each one.
 
    If you see a web page that says "Yay! " then you are all done!
 
-   Finally, come back to the command prompt and press `CTRL-C` to stop the webserver.
-
-## STEP 3: Configure Version Control
-
-And finally, let's setup your Git version control system.
-
-Substitute your name and your NU email address below.
-
-   ```
-   git config --global color.ui true
-   git config --global user.name "YOUR NAME"
-   git config --global user.email "YOUR@EMAIL.com"
-   ```
-
-Congratulations, you're all set!
+   Come back to the command prompt and press `CTRL-C` to stop the webserver.

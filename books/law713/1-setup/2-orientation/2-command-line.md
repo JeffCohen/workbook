@@ -96,7 +96,9 @@ exit
 or press `CTRL-D`.
 
 
-## Git commands
+## Git Command Reference
+
+When working on assignments, you may refer back to this cheat sheet.
 
 **Start a New Repository**
 
