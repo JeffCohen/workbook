@@ -6,14 +6,17 @@ This entire process will take about 30 minutes.
 
 ## STEP 1: Install the Ruby on Rails Environment
 
+Start by opening the `Terminal` application.
 
-1. We can now install a tool called **rbenv**:
+Copy and paste each line below as shown, pressing [Enter] after each one.
+
+1. We will install a tool called **rbenv**:
 
    ```
    brew install rbenv ruby-build
    ```
 
-2. And now we install the Ruby programming language interpreter.
+2. Now we will install the Ruby programming language interpreter.
    Copy and paste each line below, one at a time, pressing [Enter] after each one:
 
    ```
@@ -42,6 +45,8 @@ This entire process will take about 30 minutes.
 
 1. Let's create a directory named **code** in your Home folder:
 
+   > That ~ symbol is the _tilde_, which is in the upper-left of your Mac keyboard.
+
    ```
    cd ~
    mkdir code
@@ -64,7 +69,7 @@ This entire process will take about 30 minutes.
 
    If you see a web page that says "Yay! " then you are all done!
 
-   Finally, come back to the command prompt and press CTRL-C to stop the webserver.
+   Finally, come back to the command prompt and press `CTRL-C` to stop the webserver.
 
 ## STEP 3: Configure Version Control
 

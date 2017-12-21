@@ -60,5 +60,26 @@ Turn on the Autosave feature:
 4. Click the small `Settings` button in the package widget.
 5. Check the box that says `Enabled`
 
+## STEP 4: Install Homebrew (5 minutes)
+
+Finally, we will install a tool called [Homebrew](https://brew.sh/) which will let us... install even more things.  Here's a video overview (less than 4 minutes):
+
+<%= video_for 'AFQVdOJasNo' %>
+
+And now for the formal instructions:
+
+1. Start by opening the `Terminal` application.
+
+2. Then paste in this entire line of code, which will download a remote
+   script and execute it.  The script explains what it will do and then
+   pauses before it does it.  When asked to provide your computer
+   password, it won't be shown as you type, but don't worry - just
+   type your password and press [Enter].
+
+   ```
+   /usr/bin/ruby -e "$(curl -fsSL  https://raw.githubusercontent.com/Homebrew/install/master/install)"
+   ```
+ 3. After about 10 minutes, you should see a notice that it was installed
+    successfully. You can close the Terminal app at that point.
 
 That's it!  You're ready for class.
