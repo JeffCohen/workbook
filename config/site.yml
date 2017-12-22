@@ -4,8 +4,6 @@ development:
     - '4-rails'
     - '4-loops'
   draft:
-    - '2-html'
-    - '3-ruby'
   assignment_unlock_week: 0
   # require_login: true
 

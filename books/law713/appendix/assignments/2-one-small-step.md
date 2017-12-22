@@ -1,10 +1,8 @@
 # Assignment: One Small Step
 
-Today we will take our first step into computer programming!
-
 No actual programming knowledge is needed to successfully complete
 this assignment. The goal is to become acquainted with how to create
-files, write code, and publish your work as a  GitHub repository.
+text files, write code, and publish your work as a  GitHub repository.
 
 Be careful!  *Work slowly.*  There are many steps required,
 and each step has multiple sub-steps. If you get stuck, reach out
@@ -33,14 +31,13 @@ for help.
   git commit -m "Completed step 1"
   ```
 
-You now have a _local repository_, and you can continue to make commits
-(code snapshots) so that you can keep a history of your changes.
+You now have a _local repository_ so that you can keep a history of all
+future changes to the code.
 
 ## STEP 3. Create a Remote GitHub Repository
 
-Now that you have a local Git repository (congratulations!), let's create
-a remote repository as well, so that you will have a place to backup your code
-and share it with others who can't get to your laptop.
+Let's create a remote repository as well, so that you can backup your code
+and share it with others.
 
 - Login to GitHub.com
 - Click "New Repository"
