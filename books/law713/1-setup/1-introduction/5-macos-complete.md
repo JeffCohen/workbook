@@ -32,10 +32,7 @@ Copy and paste each line below as shown, pressing [Enter] after each one.
 5. Assuming everything is good so far, we can install Rails.  Enter your computer password if prompted.
 
    ```
-   echo "export GEM_HOME=$HOME/.gem/ruby/2.4.0" >> ~/.bashrc
-   echo "export PATH=$HOME/.gem/ruby/2.4.0/bin:$PATH" >> ~/.bashrc
    echo "gem: --no-document" >> ~/.gemrc
-   source ~/.bashrc
    sudo gem update --system
    gem install bundler
    gem install rails

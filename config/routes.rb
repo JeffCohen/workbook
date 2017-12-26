@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   end
 
   resources :sessions
+  get '/schedule' => 'schedules#show'
 
   get ':topic(/:chapter)(/:page)' => 'pages#show'
 
