@@ -4,43 +4,27 @@ Be sure to do the the [First Day Setup](/1-setup/1-introduction/2-first-day:-mac
 
 This entire process will take about 30 minutes.  
 
+Watch this video first so you know what to expect.
+
+<%= video_for '', width: 640 %>
+
 ## STEP 1: Install the Ruby on Rails Environment
 
-Start by opening the `Terminal` application.
+1. Start by opening the `Terminal` application.
+2. Paste the following line into your command prompt and press [Enter]:
 
-Copy and paste each line below as shown, pressing [Enter] after each one.
+   `curl -sL https://www.nulaw713.com/win10setup | bash -E -`
 
-1. We will install a tool called **rbenv**:
+   (Make sure you copy the whole thing, including that hyphen at the end!)
 
-   ```
-   brew install rbenv ruby-build
-   ```
+3. After about 25 minutes, if all goes well, you'll be back the command prompt `$`.
 
-2. Now we will install the Ruby programming language interpreter.
-   Copy and paste each line below, one at a time, pressing [Enter] after each one:
-
-   ```
-   echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi'  >>~/.bash_profile
-   source ~/.bash_profile
-   rbenv install 2.4.2
-   rbenv global 2.4.2
-   ruby -v
-   ```
-
-   At this point you should see some output starting with **ruby 2.4.2....** or something similar.  If not, ask for help, because the next step won't work.
-
-5. Assuming everything is good so far, we can install Rails.  Enter your computer password if prompted.
-
-   ```
-   echo "gem: --no-document" >> ~/.gemrc
-   sudo gem update --system
-   gem install bundler
-   gem install rails
-   ```
+If you think something went wrong, contact me and send me
+your `~/install-log.txt` file.
 
 ## STEP 2: Configure Version Control
 
-Let's setup your Git version control system.
+Now we can setup your Git version control system.
 
 Run these commands from your command prompt, but of course substitute your name and your NU email address below.
 
@@ -51,33 +35,16 @@ Run these commands from your command prompt, but of course substitute your name 
    ```
 
 
-## STEP 3: Verification
+## STEP 3: Verify Your Environment
 
-1. Create a directory named **code** in your Home folder:
+1. Create a new Rails web application by entering this line and pressing [Enter]:
 
-   > That ~ symbol is the _tilde_, which is in the upper-left of your Mac keyboard.
+   `rails new sample`
 
-   ```
-   cd ~
-   mkdir code
-   echo "cd ~/code" >> ~/.bash_profile
-   ```
+2. `cd sample`   
+3. `rails server`
+4. Open your browser and go to this address (I know it looks funny): `http://localhost:3000`
 
-2. Finally, let's generate a sample Rails application:
+   If you see the "Yay!" page, congratulations!  You're all set.  
 
-   ```
-   cd ~/code
-   rails new sample
-   ```
-   After a minute, you should see a green message that everything was successful.  Then:
-
-   ```
-   cd sample
-   rails server
-   ```
-
-   The moment of truth: open your Chrome browser and go to [http://localhost:3000](http://localhost:3000).
-
-   If you see a web page that says "Yay! " then you are all done!
-
-   Come back to the command prompt and press `CTRL-C` to stop the webserver.
+5. Go back to your command prompt window and press `CTRL-C` to stop the server.

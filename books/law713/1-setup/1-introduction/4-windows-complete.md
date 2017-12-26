@@ -73,4 +73,4 @@ your `~/install-log.txt` file.
 
    If you see the "Yay!" page, congratulations!  You're all set.  
 
-7. You can go back to your command prompt window and press `CTRL-C` to stop the server.
+7. Go back to your command prompt window and press `CTRL-C` to stop the server.
