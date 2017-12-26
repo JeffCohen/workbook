@@ -1,6 +1,8 @@
 development:
   book: 'law713'
   coming_soon:
+    - '4-windows-complete'
+    - '5-macos-complete'
     - '4-rails'
     - '4-loops'
   draft:
@@ -17,8 +19,8 @@ production:
   assignment_unlock_week: <%= ENV['BOOK_ASSIGNMENT_UNLOCK_WEEK'] %>
   require_login: <%= ENV["BOOK_REQUIRE_LOGIN"].present? %>
   coming_soon:
+    - '4-windows-complete'
+    - '5-macos-complete'
     - '4-rails'
     - '4-loops'
   draft:
-    - '2-html'
-    - '3-ruby'
