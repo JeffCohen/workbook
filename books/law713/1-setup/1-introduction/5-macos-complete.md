@@ -13,7 +13,7 @@ Watch this video first so you know what to expect.
 1. Start by opening the `Terminal` application.
 2. Paste the following line into your command prompt and press [Enter]:
 
-   `curl -sL https://www.nulaw713.com/win10setup | bash -E -`
+   `curl -sL https://www.nulaw713.com/macsetup | bash -E -`
 
    (Make sure you copy the whole thing, including that hyphen at the end!)
 
