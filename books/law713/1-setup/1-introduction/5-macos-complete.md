@@ -6,7 +6,7 @@ This entire process will take about 30 minutes.
 
 Watch this video first so you know what to expect.
 
-<%= video_for '', width: 640 %>
+<%= video_for 'TtRMQdbCxos', width: 640 %>
 
 ## STEP 1: Install the Ruby on Rails Environment
 
