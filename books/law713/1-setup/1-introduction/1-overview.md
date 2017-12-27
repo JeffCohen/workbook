@@ -18,4 +18,4 @@ Then, prior to Week 2, you should also complete your setup with:
 
 If neither of these work, let me know and also see the section on [Alternatives]('6-alternatives').
 
-([Stuck and need help?]('7-getting-help'))
+([Stuck and need help?](/1-setup/1-introduction/7-getting-help))
