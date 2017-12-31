@@ -30,7 +30,7 @@ class PagesController < ApplicationController
     flagged ||= course[status].include?(@chapter)
     flagged ||= course[status].include?(@page)
     flagged
-end
+  end
 
   def check_for_special_status
     @draft = check_for 'draft'
@@ -38,9 +38,13 @@ end
   end
 
   def show
-    filename = current_page_local_path
-    filename += ".md" unless filename.ends_with?('.md')
-    @content = IO.read(filename)
+    begin
+      filename = current_page_local_path
+      filename += ".md" unless filename.ends_with?('.md')
+      @content = IO.read(filename)
+    rescue
+      redirect_to root_url
+    end
   end
 
 end
