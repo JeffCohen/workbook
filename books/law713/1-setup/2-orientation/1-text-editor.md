@@ -1,6 +1,8 @@
 # Text Editing
 
-This video will help you get familiar with how to write code.  There are two things to remember:
+The best way to learn how to write code is to... write a lot of code.  Scan the menu system, right click on things, be curious!
+
+A few tips:
 
 * Use the keyboard instead of your mouse/trackpad whenever possible.
 * If you use a menu item, notice the hotkey (if any) so that you can use the keyboard next time.
