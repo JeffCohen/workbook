@@ -1,12 +1,12 @@
 development:
-  book: 'law713'
-  coming_soon:
-    - '4-windows-complete'
-    - '5-macos-complete'
-    - '4-rails'
-    - '4-loops'
-  draft:
-  assignment_unlock_week: 4
+  book: <%= ENV['BOOK'] || 'law713' %>
+  # coming_soon:
+  #   - '4-windows-complete'
+  #   - '5-macos-complete'
+  #   - '4-rails'
+  #   - '4-loops'
+  # draft:
+  # assignment_unlock_week: 4
   # require_login: true
 
 test:

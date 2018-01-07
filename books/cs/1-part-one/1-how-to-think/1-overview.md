@@ -1,0 +1,9 @@
+# How To Think
+
+Let's get right to the best part of computer science: _computational thinking_.  This is the name often given to the particular way of reasoning about the world that has punctuated the entire history of computer science.  It is a manner of approaching every problem we need to solve, and it is rooted in the long, arduous evolution of the scientific method.
+
+In some ways it would be proper to say that the inventors of computer science came well before Ada Lovelace and Charles Babbage; we must go back to the beginning of the Enlightenment, when evidence, proof, and logical reasoning came to be understood as the best path of progress.  When scientific progress bloomed into the industrial revolution, we inherited not only locomotives and factories, but also a new way of reasoning about the things we are trying to build.
+
+Schools in the US have historically limited their teaching of the scientific method and outcomes-based reasoning skills to the science and mathematics classrooms.   The more recent push toward computer science in the early grades will hopefully be transformed into a push toward computational thinking skills, rather than specific programming language requirements.  Not everyone wants to grow up to be a software engineer; but everyone should learn how to think; how to investigate claims based on data; how to discern the difference between correlation and causation; and how to detect assumptions and falacies in rhetorical argument.
+
+Computational thinking is, therefore, not limited to the endeavor of computer science or programming, but a skill with a wide range of applicability regardless of vocation.  It is therefore, arguable, the _best_ part of computer science, and it manifests itself in many different ways.  This chapter will highlight the best ways to put computational thinking into practice.

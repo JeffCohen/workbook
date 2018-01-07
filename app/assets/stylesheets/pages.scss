@@ -59,7 +59,12 @@ h1 {
   margin-bottom: 2rem;
   border-bottom: solid 1px rgba(0, 128, 128, 0.6);
 }
+.topic-heading {
 
+}
+@media print {
+    h1 {page-break-before: always;}
+}
 blockquote p {
   padding: 1rem;
   margin: 1rem;
