@@ -6,7 +6,7 @@ class SearchesController < ApplicationController
     @chapters = results.map do |result|
       /^books\/[^\/]+\/(?<filename>.+)\.md:(?<line>\d+):(?<extract>.+$)/ =~ result
       filename
-    end.uniq
+    end.uniq.compact
 
   end
 
