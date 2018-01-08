@@ -1,7 +1,8 @@
-.row.d-flex.flex-column.tip
+- if @tip
+  .row.d-flex.flex-column.tip
 
-  .col-sm-12.d-flex.justify-content-center.align-items-center.flex-column
-    %p= @tip
-    %p.tiny
-      = link_to '- 7 Tips for Highly Successful Software Developers',
-                tips_path
+    .col-sm-12.d-flex.justify-content-center.align-items-center.flex-column
+      %p= @tip
+      %p.tiny
+        = link_to '- 7 Tips for Highly Successful Software Developers',
+                  tips_path

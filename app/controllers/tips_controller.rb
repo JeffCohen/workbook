@@ -11,9 +11,13 @@ class TipsController < ApplicationController
   def index
     @tips = TIPS
   end
-  
+
   def show
-    @tip = TIPS.sample
+    if book['habits'].nil? || book['habits']
+      @tip = TIPS.sample
+    else
+      redirect_to "/#{topics.first}"
+    end
   end
 
 end
