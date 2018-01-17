@@ -6,9 +6,13 @@ A memory location was initially conceived by Alan Turing in his quest to invent 
 
 Today, modern computers use molecular substrates to reliable store and recall numerical data, but we still imagine them as mail slots, cubby holes, or other familiar physical metaphors.
 
+## Addresses
+
 Each memory location is associated with a specific _address_ that uniquely identifies that location.  Modern operating systems provide a layer of abstraction on top of the physical hardware by giving each process a "virtual" set of memory addresses, which are mappyed by the operating system to physical addresses.  This virtualization allows each process to access memory consistently, even though the underlying system may actually "page" the memory onto other storage devices (like the hard drive) as needed in order to maintain the illusion of multitasking in a shared memory space.
 
 The size of a single memory location is measured in bits. The number of bits that can fit has increased over the years.  The personal computing era begin with 8-bit values per location.  Modern smartphones and tablets can now store an entire 64-bit value in a single location.  (For the remainder of this book, we will assume that a single memory location can store a 64-bit value.)
+
+## Values
 
 If we only used computer memory to represent numbers, computers wouldn't be very useful.  The breakthrough in computing came with the realization that numbers could represent other things.
 
@@ -16,7 +20,9 @@ At first, certain numerical values were a shorthand to refer to a particular "in
 
 Later, we extended this idea of interpretation to allow numbers to represent letters of the alphabet, custom instructions, color values, geolocation coordinates, and almost anything else we can imagine.
 
-However, despite the infinite variety of possible interprations for any given memory address, a value stored in a given memory location is always approached in one of two ways:
+## Pointers
+
+However, despite the infinite variety of possible interpretations for any given memory address, a value stored in a given memory location is always approached in one of two ways:
 
 1. as data: that is, a numerical value or equivalent interpretation of some real-world entity; or,
 2. the address of another memory location

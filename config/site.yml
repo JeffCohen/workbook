@@ -6,7 +6,7 @@ development:
   #   - '4-rails'
   #   - '4-loops'
   # draft:
-  # assignment_unlock_week: 4
+  assignment_unlock_week: 3
   # require_login: true
 
 test:
@@ -19,8 +19,6 @@ production:
   assignment_unlock_week: <%= ENV['BOOK_ASSIGNMENT_UNLOCK_WEEK'] %>
   require_login: <%= ENV["BOOK_REQUIRE_LOGIN"].present? %>
   coming_soon:
-    - '4-windows-complete'
-    - '5-macos-complete'
     - '4-rails'
     - '4-loops'
   draft:

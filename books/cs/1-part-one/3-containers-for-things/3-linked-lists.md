@@ -1,5 +1,6 @@
 # Linked Lists
 
+We now use the atoms of memory locations to build slightly larger, more useful molecules.
 If we put together a simple series of memory locations, we can make them work together to form a _linked list_.  A linked list is the simplest possible container for a collection of data elements.
 
 A linked list is a linear series of _nodes_.  Each node is constructed from a pair of memory locations. The first location is responsible for storing the desired data (a single 64-bit numerical value); the other location is responsible for storing the memory location of the next node.
@@ -16,7 +17,4 @@ One nice thing about a linked list is that it's pretty easy to maintain a notion
 
 If you can solve the challenge of building a your own linked list to manage some data that's meaningful - your MP3 collection, for example - then your brain will come to understand the mindset and the patterns that have been most crucial for the endeavor of computer science to advance.
 
-1. a collection of things is made up of smaller, atomic containers
-2. data has no intrinsic meaning - it's all about representation and interpretation
-3. memory pointers represent the breakthrough concept of_indirection_, a powerful technique to build software artifacts
-4. indirection is the core idea of all modern software architecture
+  
