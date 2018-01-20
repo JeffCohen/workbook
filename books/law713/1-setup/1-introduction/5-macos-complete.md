@@ -11,13 +11,19 @@ Watch this video first so you know what to expect.
 ## STEP 1: Install the Ruby on Rails Environment
 
 1. Start by opening the `Terminal` application.
-2. Paste the following line into your command prompt and press [Enter]:
+2. Paste the following entire line into your command prompt and press [Enter]:
+
+   `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
+   (Make sure you copy the whole thing, including that quotes at the end!)
+
+3. Paste the following line into your command prompt and press [Enter]:
 
    `curl -sL https://www.nulaw713.com/macsetup | bash -E -`
 
    (Make sure you copy the whole thing, including that hyphen at the end!)
 
-3. After about 25 minutes, if all goes well, you'll be back the command prompt `$`.
+4. After about 25 minutes, if all goes well, you'll be back the command prompt `$`.
 
 If you think something went wrong, contact me and send me
 your `~/install-log.txt` file.
