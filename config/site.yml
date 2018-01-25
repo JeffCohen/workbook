@@ -20,5 +20,4 @@ production:
   require_login: <%= ENV["BOOK_REQUIRE_LOGIN"].present? %>
   coming_soon:
     - '4-rails'
-    - '4-loops'
   draft:

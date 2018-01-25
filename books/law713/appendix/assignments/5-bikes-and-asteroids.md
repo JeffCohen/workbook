@@ -30,7 +30,7 @@ Then:
 From now on, you can commit and sync as often as you'd like.  Just be sure to make
 your final commit and sync before the deadline.
 
-Here's how to commit (take a snapshot of your code):
+Here's a reminder of how to commit your code (take a snapshot of your code):
 
 ```
 git add -A
@@ -70,7 +70,7 @@ We're going to create a web resource named _stations_.
 3. Add a file named `app/views/controllers/index.html.erb` with this code:
 
    ``` html
-   <%% data = JSON.parse(open("https://feeds.divvybikes.com/stations/stations.json").read) %>
+   <%% data = JSON.parse(open("https://bikes.nulaw713.com/stations.json").read) %>
 
    <h1>Divvy Stations</h1>
 
@@ -93,7 +93,7 @@ should have the number of available bikes.
 
 **HINTS**
 
-* Open a `rails console` session and try `data = JSON.parse(open("https://feeds.divvybikes.com/stations/stations.json").read)`.  
+* Open a `rails console` session and try `data = JSON.parse(open("https://bikes.nulaw713.com/stations.json").read)`.  
 * Get practice
 at using the `data` variable to retrieve station data.  
 * If you feel lost, start with [Ruby Hashes](/3-ruby/2-lists/4-hashes) and the preceding sections as necessary.
@@ -131,5 +131,4 @@ Your task is the build a web page that lists the next five asteroids that are po
 
    ```
    <h1>Asteroids</h1>
-
-   
+   ```
