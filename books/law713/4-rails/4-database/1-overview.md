@@ -1,3 +1,1 @@
 # Overview
-
-Databases store data.

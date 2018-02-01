@@ -12,10 +12,14 @@ We use the `rails new` command to generate a new application:
 ~/code$ rails new myapp
 ```
 
-In this example, a new subfolder named `myapp` will be created, and inside
-will be the skeleton of a brand new web application.  To start working
+Always start in the `~/code` folder when you run this command, and of course you'll probably want something different than `myapp` but that's what we'll use in this example. A new subfolder named `myapp` (or whatever you chose) will be created, and inside of that subfolder
+will be the skeleton of a brand new web application.  
+
+To start working
 with your new application, change your current directory to be the new
 subfolder:
+
+> Always change your current directory after `rails new`.
 
 ```
 ~/code$ cd myapp
