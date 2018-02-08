@@ -1,12 +1,5 @@
 # Arbitrary Resources
 
-<div class="alert alert-danger" role="alert">
-This section is optional, and only to be used
-for non-model resources.  If you have a model-backed
-resource, see the next page.
-</div>
-
-
 Let's imagine that we want to add a resource named _products_ to our application.
 
 Here's a 3-step recipe.

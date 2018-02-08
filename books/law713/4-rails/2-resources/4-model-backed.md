@@ -1,11 +1,5 @@
 # Model-Backed Resources
 
-<div class="alert alert-danger" role="alert">
-This section is only to be used for model-backed
-resources.  For non-model backed resources, see the previous page.
-</div>
-
-
 Let's imagine that we want to add a model-backed resource named _products_ to our application.
 
 Here's a 3-step recipe.
