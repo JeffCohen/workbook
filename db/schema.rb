@@ -19,4 +19,11 @@ ActiveRecord::Schema.define(version: 0) do
     t.string "url_path"
   end
 
+  create_table "searches", force: :cascade do |t|
+    t.string "term"
+    t.integer "hits"
+    t.integer "freq"
+    t.datetime "created_at"
+  end
+
 end

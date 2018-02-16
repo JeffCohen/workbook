@@ -9,6 +9,10 @@ class SearchesController < ApplicationController
       filename
     end.uniq.compact
 
+    s = Search.find_by(term: params[:term].strip)
+    s ||= Search.new(term: params[:term].strip, hits: @chapters.size, freq: 0)
+    s.freq += 1
+    s.save
   end
 
 
