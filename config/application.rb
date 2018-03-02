@@ -1,4 +1,5 @@
 require_relative 'boot'
+require 'active_support/core_ext/string/conversions'
 
 require "rails"
 # Pick the frameworks you want:
@@ -21,5 +22,6 @@ module Workbook
     config.load_defaults 5.1
     config.site = config_for(:site) rescue nil
     config.book = YAML.load_file(File.join(Rails.root, 'books', config.site['book'], 'config.yml'))
+    config.version = `git log -1 --format=%cd`.chomp.to_datetime.strftime("%Y-%m-%d %H:%M")
   end
 end
