@@ -1,13 +1,9 @@
 development:
-  book: <%= ENV['BOOK'] || 'law713' %>
-  # coming_soon:
-  #   - '4-windows-complete'
-  #   - '5-macos-complete'
-  #   - '4-rails'
-  #   - '4-loops'
-  # draft:
-  assignment_unlock_week: 10
-  # require_login: true
+  book: <%= ENV['BOOK'] || 'law713 '%>
+  assignment_unlock_week: <%= ENV['BOOK_ASSIGNMENT_UNLOCK_WEEK'] || 10 %>
+  require_login: <%= ENV["BOOK_REQUIRE_LOGIN"].present? || false %>
+  coming_soon:
+  draft:
 
 test:
   book: 'law713'
