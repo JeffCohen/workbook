@@ -1,9 +1,9 @@
 class Course < ApplicationRecord
 
-  validates_presence_of :name, :url_path, :local_folder
+  validates_presence_of :name
 
   def to_param
     url_path
   end
-  
+
 end
