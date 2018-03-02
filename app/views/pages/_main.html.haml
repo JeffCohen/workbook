@@ -1,0 +1,9 @@
+- special_class = 'draft' if @draft && !@coming_soon
+.col-md-9.main{class: (special_class)}
+
+  - if !@coming_soon
+    = markdown @content
+
+  - else
+    %h3.d-flex.justify-content-center.align-items-center.flex-column
+      %img(src="/coming-soon.jpg" class="coming-soon img-fluid")

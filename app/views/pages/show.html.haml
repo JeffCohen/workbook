@@ -1,7 +1,8 @@
 .row.full
 
-  .col-md-3.toc-sidebar.no-print
-    = render 'layouts/toc'
+  .col-md-3.no-print
+    .toc-sidebar
+      = render 'layouts/toc'
 
   - special_class = 'draft' if @draft && !@coming_soon
   .col-md-9.main{class: (special_class)}
