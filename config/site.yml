@@ -6,7 +6,7 @@ development:
   #   - '4-rails'
   #   - '4-loops'
   # draft:
-  assignment_unlock_week: 7
+  assignment_unlock_week: 10
   # require_login: true
 
 test:

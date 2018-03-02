@@ -1,11 +1,10 @@
 # MovieNight
 
-# BrightSky
-
 This assignment is intended to reinforce the following concepts:
 
-* Implementing the seven actions for "CRUD" of a single resource
-* Using `redirect_to` to have your website redirect to other URLs
+* Unifying multiple resources on a single page
+* Using hidden input fields to transmit extra form data
+* Practicing how to Google for coding skills beyond our workbook
 
 ## STEP 1. Get the code
 
@@ -68,6 +67,20 @@ Open your browser to `http://localhost:3000`.  You should see the app
 that we've been building in class.  Review the models, controllers,
 and views to ensure that you're familiar with how everything works.
 
-## STEP 4.  Customize the Movie Reviews
+## STEP 4.  Implement New Requirements
 
 Now it's your turn.  Take ownership of the code and modify it.
+
+* <span class="badge badge-success">8 points</span>
+   Display the list of the movie's reviews on the movie's "show" page.
+   Reviews should be sorted to show the most recent reviews
+   at the top.
+* <span class="badge badge-success">7 points</span>
+   Embed a form to write a new review on the movie's show page.
+   Submitting the form should add the review to the movie.
+   The user should be redirected right back to the movie's show page.
+* <span class="badge badge-success">5 points</span>
+   If no reviews currently exist for the movie,
+   include the message "Be the first to write a review!"
+ * <span class="badge badge-success">5 points</span>
+    Near the movie title, display the average star rating for the movie. Round to the nearest tenth. See IMDB for an example.
