@@ -1,5 +1,4 @@
-- special_class = 'draft' if @draft && !@coming_soon
-.col-md-9.main{class: (special_class)}
+.col-md-9.main{class: ('draft' if @draft && !@coming_soon)}
 
   - if !@coming_soon
     = markdown @content
