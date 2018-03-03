@@ -11,8 +11,9 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require turbolinks
 //= require turbolinks-jquery
+//= require turbolinks
+//= require turbolinks-compatibility
 //= require highlight
 //= require markdown
 //= require assignments
