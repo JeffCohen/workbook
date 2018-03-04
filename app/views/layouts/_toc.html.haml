@@ -1,6 +1,9 @@
-%p.section-heading
-  %b= @topic.sub(/^\d-/,'').upcase
+- content_for :chapters do
+  %span.navbar-text.navbar-brand.current= @topic.sub(/^\d-/,'').upcase
+  %ul.navbar-nav
+    - chapters.each_with_index do |chapter, index|
+      - /(?<section_number>^\d+)\-(?<title>.+$)/ =~ chapter
+      %li.nav-item= link_to "#{index+1}. #{title.titleize}", chapter_path(chapter: chapter), class: 'nav-link'
 
-%ol
-  - chapters.each do |chapter|
-    = render 'chapter', chapter: chapter 
+%ol.list-unstyled
+  = render 'chapter', chapter: @chapter
