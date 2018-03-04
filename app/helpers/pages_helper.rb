@@ -1,5 +1,9 @@
 module PagesHelper
 
+  def cleanup(book_element = nil)
+    book_element&.sub(/\d-/,'')
+  end
+
   def topic_path(topic = nil)
     "/#{topic || @topic}"
   end

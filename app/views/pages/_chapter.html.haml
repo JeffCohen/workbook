@@ -6,4 +6,4 @@
     - pages_for(chapter: chapter).each do |page|
       - /(?<chapter_number>^\d+)\-(?<title>.+)(\.md)?/ =~ page
       - page_title = "#{section_number}.#{chapter_number}. #{title.titleize}"
-      %li.toc-page= link_to page_title, page_path(chapter: chapter, page: page), remote: true
+      %li.toc-page= link_to page_title, page_path(chapter: chapter, page: page)

@@ -1,4 +1,4 @@
-%nav.navbar.navbar-expand-lg.navbar-dark.bg-primary.mx-md-3.my-md-2.no-print
+%nav.navbar.navbar-expand-lg.navbar-dark.bg-primary.mt-md-2.no-print.border-bottom.border-white
 
   = link_to book['number'], root_url, class: 'navbar-brand'
 
@@ -9,7 +9,7 @@
     - if logged_in?
       %ul.navbar-nav
         - topics.each do |topic|
-          %li.nav-item= link_to topic.sub(/\d-/,''), topic_path(topic), class: 'nav-link topic-nav-link'
+          %li.nav-item= link_to cleanup(topic), topic_path(topic), class: 'nav-link topic-nav-link'
 
       %ul.navbar-nav
         - appendices.each do |appendix|
@@ -22,3 +22,6 @@
 
   %form.form-inline.my-2.my-lg-0.ml-auto{action: '/search'}
     %input.form-control.mr-sm-2{size: '50%', :placeholder => "Search", :type => "text", :name => 'term'}/
+
+%nav.navbar.navbar-chapters.navbar-expand-lg.navbar-dark.bg-primary.no-print
+  = content_for :chapters
