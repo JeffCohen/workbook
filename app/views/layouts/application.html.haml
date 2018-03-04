@@ -30,8 +30,8 @@
       = yield
 
     .container-fluid.pt-3#footer.text-muted.border-top
-      %p
-        &copy;2018
-        #{link_to 'Jeffrey Cohen', 'https://www.jeffcohenonline.com', class: 'pr-3'}
+      %p.float-right
+        -# &copy;2018
+        -# #{link_to 'Jeffrey Cohen', 'https://www.jeffcohenonline.com', class: 'pr-3'}
         Version
         = Rails.configuration.version
