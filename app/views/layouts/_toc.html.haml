@@ -1,5 +1,5 @@
 - content_for :chapters do
-  %span.navbar-text.navbar-brand.current= @topic.sub(/^\d-/,'').upcase
+  %span.navbar-text.navbar-brand.current= cleanup(@topic).upcase
   %ul.navbar-nav
     - chapters.each_with_index do |chapter, index|
       - /(?<section_number>^\d+)\-(?<title>.+$)/ =~ chapter

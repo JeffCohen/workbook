@@ -1,7 +1,7 @@
 module PagesHelper
 
   def cleanup(book_element = nil)
-    book_element&.sub(/\d-/,'')
+    book_element&.sub(/\d-/,'')&.titleize
   end
 
   def topic_path(topic = nil)

@@ -1,12 +1,10 @@
-.assignments {
 
-  .table-clickable {
-    tbody tr[data-href] {
-      cursor: pointer;
-    }
+.table-clickable {
+  tbody tr[data-href] {
+    cursor: pointer;
   }
-
 }
+
 
 .assignment img {
   border: solid 1px #DDD;

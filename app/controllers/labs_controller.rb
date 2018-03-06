@@ -1,7 +1,7 @@
 class LabsController < ApplicationController
 
   def index
-    @unlock = 1
+    @unlock = 100
     @labs = appendix(:labs)
   end
 
