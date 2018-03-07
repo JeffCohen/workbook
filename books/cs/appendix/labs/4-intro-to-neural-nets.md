@@ -1,10 +1,11 @@
 # Neural Networks
 
-* Simplest implementation: logic gates
-  * AND gate
-  * OR gate
-  * NOT gate
-* Perceptron Learning
+* Perceptrons
+  * Logic gates
+    * AND gate
+    * OR gate
+    * NOT gate
+  * Another example
 
 Discussion:
 
