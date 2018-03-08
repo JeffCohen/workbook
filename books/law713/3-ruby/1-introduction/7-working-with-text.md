@@ -44,7 +44,7 @@ we want Ruby to first evaluate the expression inside.  Here's
 another example:
 
 ``` irb
-irb(main)> "There are {4 + 3 + 2 + 1} bowling pins."
+irb(main)> "There are #{4 + 3 + 2 + 1} bowling pins."
 => "There are 10 bowling pins."
 ```
 
