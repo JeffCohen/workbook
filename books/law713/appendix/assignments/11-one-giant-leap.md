@@ -13,6 +13,7 @@ This assignment is intended to reinforce the following concepts:
 ~/code$ git clone https://www.github.com/nulaw713/giant_leap
 ~/code$ cd giant_leap
 ~/code/giant_leap$ bundle install --without production
+~/code/giant_leap$ rails db:seed
 ```
 
 Now, open the entire `~/code/giant_leap` folder in Atom.
