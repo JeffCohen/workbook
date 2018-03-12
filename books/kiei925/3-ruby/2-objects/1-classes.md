@@ -1,4 +1,4 @@
-# Classifications (aka Classes)
+# Classes
 
 We have learned how to compose _expressions_ by combining
 numbers, text, and various kinds of operators.
@@ -6,7 +6,7 @@ numbers, text, and various kinds of operators.
 We can now be more technical in our definition of how these
 expressions work.
 
-## Classes
+## Object Classification
 
 When we type literal numbers like `7` or `23`, Ruby understands them
 because these characters on your keyboard are classified by Ruby

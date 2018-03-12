@@ -2,8 +2,7 @@
 
 You actually have two Ruby interpreters installed on your computer.
 
-The first one we will learn about is called _interactive Ruby_, or
-_irb_ for short.
+The first one is called _interactive Ruby_, or _irb_ for short.
 
 Open your command prompt, and start `irb` like this:
 

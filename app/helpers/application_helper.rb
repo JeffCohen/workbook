@@ -1,7 +1,18 @@
 module ApplicationHelper
 
-  def thumbnail_for(url)
-    '<p><a href="' + url + '"><img width="400px" src="' + url + '" title="click for larger image"></a></p>'
+  def bonus
+    '<div class="alert alert-primary" role="alert">
+      This is a bonus material.
+    </div>'
+  end
+
+  def tiny_thumbnail_for(url)
+    thumbnail_for(url, width: '200px')
+  end
+
+  def thumbnail_for(url, options = {})
+    options[:width] ||= '400px'
+    '<p class="' + options[:class] + '"><a href="' + url + '"><img width="' + options[:width] + '" src="' + url + '" title="click for larger image"></a></p>'
   end
 
   def image_for(url)

@@ -8,16 +8,37 @@ In addition to numbers and text, Ruby has two special values,
 `true` and `false`.  These values are used when the computer
 is asked to compare two expressions.
 
-Try the following in an `irb` session to get a sense of how
-we make comparisons.  Pay special attention to the double-equal
-operator `==` which is used to compare two expessions against
+Try the following expressions in an `irb` session to get a sense of how
+we make comparisons.  
+
+Pay special attention to the double-equal
+operator `==` which is used to compare two expressions against
 each other.
 
-> **Remember**, comparisons use the `==` operator,
+The `!=` operator means "is not equal to."
+
+> **Remember**, equality comparisons use the `==` operator,
 not the single `=` assignment operator.
 
 ``` irb
+irb(main)> x = nil
+=> nil
+
+irb(main)> x.nil?
+=> true
+
+irb(main)> x.to_i
+=> 0
+
+irb(main)> x.to_f
+=> 0.0
+```
+
+``` irb
 irb(main)> 1 == 1
+=> true
+
+irb(main)> 1 != 2
 => true
 irb(main)> 1 < 2
 => true
@@ -28,6 +49,8 @@ irb(main)> "hello" == "hello"
 irb(main)> "hello" == "Hello"
 => false
 irb(main)> "goodbye".upcase == "GOODBYE"
+=> true
+irb(main)> "goodbye".upcase != "HELLO"
 => true
 ```
 
