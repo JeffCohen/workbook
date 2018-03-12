@@ -24,7 +24,7 @@ encompasses the form controls.
 
 Unlike raw HTML, all four HTTP methods are supported:
 
-|`method`|Reason|Supported in HTML?|
+|HTTP method|Reason|Supported in HTML?|
 |-----------|------|------------------|
 |`get`|Retrieve data|Yes|    
 |`post`|Add new data|Yes|    
