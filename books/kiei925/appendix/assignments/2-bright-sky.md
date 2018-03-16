@@ -3,14 +3,13 @@
 This assignment is intended to reinforce the following concepts:
 
 * Consuming JSON data from a third-party service
-* Using a `<form>` for user input
 * Using Ruby for conditional logic
 
 You'll start with a prewritten web application that displays the
 weather in Chicago.
 
 Except... it doesn't actually show the current conditions.  The
-weather data has been hardcoded by a lazy developer!
+output has been hardcoded by a lazy developer!
 
 Your job is to use the <a href="http://openweathermap.org/">OpenWeatherMap API</a>
 to display up-to-the-minute weather information for any city in the US.
@@ -18,10 +17,8 @@ to display up-to-the-minute weather information for any city in the US.
 ## STEP 1. Get the code
 
 ```
-~/code$ git clone https://www.github.com/nulaw713/bright_sky
+~/code$ git clone https://www.github.com/kiei925/bright_sky
 ~/code$ cd bright_sky
-~/code/bright_sky$ bundle install --without production
-~/code/bright_sky$
 ```
 
 Now, open the entire `~/code/bright_sky` folder in Atom.

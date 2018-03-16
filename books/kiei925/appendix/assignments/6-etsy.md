@@ -1,31 +1,29 @@
-# One Giant Leap
+# Etsy
 
 This assignment is intended to reinforce the following concepts:
 
-* How to convert a prototype website into a database-backed application
-* How to map user abilities to specific resources and actions
-* How to deploy a web application to the internet
-
+* The "golden seven" capabilities of a web resource
+* User accounts
 
 ## STEP 1. Get the code
 
 ```
-~/code$ git clone https://www.github.com/nulaw713/giant_leap
-~/code$ cd giant_leap
-~/code/giant_leap$ bundle install --without production
-~/code/giant_leap$ rails db:seed
+~/code$ git clone https://www.github.com/nulaw713/taxi_service
+~/code$ cd taxi_service
+~/code/taxi_service$ bundle install --without production
+~/code/taxi_service$ rails db:seed
 ```
 
-Now, open the entire `~/code/giant_leap` folder in Atom.
+Now, open the entire `~/code/taxi_service` folder in Atom.
 
 ## STEP 2. Connect The Code to A GitHub Repository
 
-Create a new, private repository on GitHub.com named `giant_leap`.
+Create a new, private repository on GitHub.com named `taxi_service`.
 
 Now, re-orient the application to point your repository (replace `YOUR-GITHUB-USERNAME` with your GitHub username below):
 
 ```
-~/code/giant_leap$ git remote set-url origin https://www.github.com/YOUR-GITHUB-USERNAME/giant_leap.git
+~/code/taxi_service$ git remote set-url origin https://www.github.com/YOUR-GITHUB-USERNAME/taxi_service.git
 ```
 
 From now on, you can commit and sync as often as you'd like.  Just be sure to make
@@ -60,7 +58,7 @@ The user interface has been started for you.
 Start the `rails server`:
 
 ```
-~/code/giant_leap$ rails server
+~/code/taxi_service$ rails server
 
 => Booting Puma
 => Rails 5.1.4 application starting in development
@@ -83,9 +81,7 @@ Now it's your turn.  Take ownership of the code and modify it.
 
 * <span class="badge badge-success">4 points</span>
    **Allow customers to request rides.**
-   * Add a form field for the customer's name
-   * The name, origin and destination must be provided
-   * If any of the fields are left blank, redirect the user back to the form
+   * Both the origin and destination must be provided
 * <span class="badge badge-success">7 points</span>
    **Implement `/rides`**
    * This page is for dispatchers, not customers

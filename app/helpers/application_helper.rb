@@ -12,6 +12,7 @@ module ApplicationHelper
 
   def thumbnail_for(url, options = {})
     options[:width] ||= '400px'
+    options[:class] ||= ''
     '<p class="' + options[:class] + '"><a href="' + url + '"><img width="' + options[:width] + '" src="' + url + '" title="click for larger image"></a></p>'
   end
 

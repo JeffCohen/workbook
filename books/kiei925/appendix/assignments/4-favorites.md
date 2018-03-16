@@ -17,7 +17,7 @@ Here are some examples:
 * Things you have at home that you want to sell
 
 In these directions, we will use the example of _CTA Train Stations_,
-but you should substitute your resource instead.
+but **you should substitute your resource instead.**
 
 
 ## STEP 1. Create a New Rails Application
