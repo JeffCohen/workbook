@@ -1,12 +1,10 @@
-# The Command Line
+# The Terminal
 
 Sometimes, we use the command line (or "command prompt") to send instructions
 to the computer instead of using a visual application.
 
-To open the command line:
-
-* macOS: open the `Terminal` application
-* Windows: run the `bash` command
+In Cloud9, we use the `Terminal` windows for this.  You can open as many
+Terminal windows as you want simultaneously.  
 
 Here are some common tasks that you can accomplish at the command line:
 
@@ -24,7 +22,7 @@ You want to change the current directory to `~/code`:
 cd ~/code
 ```
 
-Now you want to change to a subdirectory, `~/code/sandbox`:
+Suppose you want to change to a subdirectory, `~/code/sandbox`:
 
 > TIP: Use your up and down arrow keys
 to recall previous commands.
@@ -33,14 +31,14 @@ to recall previous commands.
 cd sandbox
 ```
 
-Now you want to go back to the parent directory, `~/code`:
+Now if you want to go back to the parent directory (`~/code`):
 
 ```
 cd ..
 ```
 
 
-Two dots `..` means "go up to the parent directory"
+Two dots `..` means "go up one directory level."
 
 
 ## Directory Listing
@@ -89,45 +87,8 @@ mv fruits.html ~/code/cookies.html
 
 ## Exit
 
+This is one way to close the current Terminal window:
+
 ```
 exit
-```
-
-or press `CTRL-D`.
-
-
-## Git Command Reference
-
-When working on assignments, you may refer back to this cheat sheet.
-
-**Start a New Repository**
-
-```
-git init
-```
-
-**Check File Status**
-
-```
-git status
-```
-
-**Commit All Current Changes**
-
-```
-git add -A
-git commit -m "Your commit message goes here"
-```
-
-**Connect with a Remote Repository**
-
-```
-git remote add origin [URL of remote repository goes here]
-git push -u origin master
-```
-
-**Push to GitHub**
-
-```
-git push
 ```

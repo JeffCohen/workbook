@@ -4,18 +4,12 @@ Every software engineer uses a set of tools necessary for constructing
 software.  This toolset is called a _development environment_, and
 the it can be daunting to set up an environment for the very first time.
 
-You don't need to install everything before the first day of class,
-but in order to follow along on the first day, do one of the following:
+This quarter, we will experiment as a class by using a development environment
+that is entirely online, or "in the cloud" as they say.
 
+These instructions assume that you are using the latest version of
+Google Chrome.
 
-* [First Day Setup Instructions for Windows](/1-setup/1-introduction/2-first-day:-windows) or
-* [First Day Setup Instructions for macOS](/1-setup/1-introduction/3-first-day:-macos).
+First, follow the [setup instructions for Cloud9](2-cloud9.md).
 
-Then, prior to Week 2, you should also complete your setup with:
-
-* [Windows Complete Setup](/1-setup/1-introduction/4-windows-complete/) or
-* [macOS Complete Setup](/1-setup/1-introduction/5-macos-complete/).
-
-If neither of these work, let me know and also see the section on [Alternatives]('6-alternatives').
-
-([Stuck and need help?](/1-setup/1-introduction/7-getting-help))
+Once that's done, use your Cloud9 terminal to setup a few extra [tools](3-tools.md).
