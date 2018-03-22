@@ -25,6 +25,6 @@ module Workbook
     puts config.site.inspect
     puts config.book.inspect
     version_date = Rails.env.production? ? File.mtime('.') : `git log -1 --format=%cd`.chomp.to_datetime
-    config.version = version_date.strftime("%Y-%m-%d %H:%M")
+    config.version = version_date.in_time_zone('Central Time (US & Canada)').strftime("%Y-%m-%d %H:%M %Z")
   end
 end
