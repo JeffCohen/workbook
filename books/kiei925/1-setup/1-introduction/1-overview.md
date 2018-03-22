@@ -10,6 +10,6 @@ that is entirely online, or "in the cloud" as they say.
 These instructions assume that you are using the latest version of
 Google Chrome.
 
-First, follow the [setup instructions for Cloud9](2-cloud9.md).
+First, follow the [setup instructions for Cloud9](/1-setup/1-introduction/2-cloud9.md).
 
-Once that's done, use your Cloud9 terminal to setup a few extra [tools](3-tools.md).
+Once that's done, use your Cloud9 terminal to setup a few extra [tools](/1-setup/1-introduction/3-tools.md).
