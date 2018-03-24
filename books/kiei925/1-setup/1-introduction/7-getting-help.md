@@ -1,7 +1,7 @@
 # Need Help?
 
-If you get stuck or have trouble, post a new discussion
-on [Canvas](https://canvas.northwestern.edu/courses/64832).
+If you get stuck or have trouble, join #kiei-925 channel on
+on [Slack](https://kellogg-mba.slack.com/messages/C3QQZ19NX/).
 
 TIPS to getting help:
 
