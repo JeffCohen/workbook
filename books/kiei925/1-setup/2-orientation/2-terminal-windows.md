@@ -6,7 +6,12 @@ to the computer instead of using a visual application.
 In Cloud9, we use the `Terminal` windows for this.  You can open as many
 Terminal windows as you want simultaneously.  
 
-Here are some common tasks that you can accomplish at the command line:
+<p>
+<img width="400px" src= 'https://www.evernote.com/l/AAa59SMvftBKiIM40E_SLFpqC_ru2YhvySEB/image.png'>
+<img width="400px" src= 'https://www.evernote.com/l/AAZ25ef61LpCPr5bg9nGQpzMAtwHjlxz2O8B/image.png'>
+
+</p>
+
 
 ## What is the Current Directory?
 
@@ -14,27 +19,39 @@ Here are some common tasks that you can accomplish at the command line:
 pwd
 ```
 
-## Change the Current Directory
+## How do I Change the Current Directory?
 
-You want to change the current directory to `~/code`:
+If you want change the current directory to `~/code`:
 
 ```
 cd ~/code
 ```
 
-Suppose you want to change to a subdirectory, `~/code/sandbox`:
+## How do I Create a New Directory?
+
+You can make a new child directory of your current directory with
+the `mkdir [dirname]` command.  Suppose you want to create a new
+subdirectory called `sandbox`:
+
+```
+~/code$ mkdir sandbox
+```
+
+If you want to go into that new subdirectory, e.g. `~/code/sandbox`:
 
 > TIP: Use your up and down arrow keys
 to recall previous commands.
 
 ```
-cd sandbox
+~/code$ cd sandbox
+~/code/sandbox$
 ```
 
-Now if you want to go back to the parent directory (`~/code`):
+Now if you want to go back to the parent directory:
 
 ```
-cd ..
+~/code/sandbox$ cd ..
+~/code$
 ```
 
 
