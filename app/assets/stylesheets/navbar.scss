@@ -1,7 +1,14 @@
+li a.nav-link.topic-nav-link.current,
+li a.nav-link.topic-nav-link.current:hover {
+  color: yellow;
+  font-weight: bold;
+}
+
 .navbar {
   padding: 0 1.0em;
-  .current {
-    color: yellow;
-    font-weight: bold;
-  }
+}
+
+.chapter-link a.nav-link {
+  font-weight: bold;
+  color: white;
 }

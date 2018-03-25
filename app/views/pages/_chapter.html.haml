@@ -1,9 +1,12 @@
-%li.toc-chapter
-  - /(?<section_number>^\d+)\-(?<title>.+$)/ =~ chapter
-  = link_to title.titleize,
-            chapter_path(chapter: chapter)
-  %ul
-    - pages_for(chapter: chapter).each do |page|
-      - /(?<chapter_number>^\d+)\-(?<title>.+)(\.md)?/ =~ page
-      - page_title = "#{section_number}.#{chapter_number}. #{title.titleize}"
-      %li.toc-page= link_to page_title, page_path(chapter: chapter, page: page)
+%ol
+  - chapters.each_with_index do |chapter, index|
+    - Rails.logger.debug index
+    %li.toc-chapter{class: "#{'current' if chapter == @chapter}"}
+      - /(?<section_number>^\d+)\-(?<title>.+$)/ =~ chapter
+      = link_to title.titleize, chapter_path(chapter: chapter)
+      - if chapter == @chapter
+        %ul
+          - pages_for(chapter: chapter).each do |page|
+            - /(?<chapter_number>^\d+)\-(?<title>.+)(\.md)?/ =~ page
+            - page_title = "#{section_number}.#{chapter_number}. #{title.titleize}"
+            %li.toc-page= link_to page_title, page_path(chapter: chapter, page: page)

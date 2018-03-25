@@ -32,26 +32,30 @@ irb(main)> x.to_i
 
 irb(main)> x.to_f
 => 0.0
-```
 
-``` irb
 irb(main)> 1 == 1
 => true
 
 irb(main)> 1 != 2
 => true
+
 irb(main)> 1 < 2
 => true
+
 irb(main)> 2 > 1
 => false
+
 irb(main)> "hello" == "hello"
 => true
+
 irb(main)> "hello" == "Hello"
 => false
+
 irb(main)> "goodbye".upcase == "GOODBYE"
 => true
+
 irb(main)> "goodbye".upcase != "HELLO"
 => true
 ```
 
-We will talk more about the concept of truth in [section 3](/3-ruby/3-intelligence).
+We will talk more about the concept of truth in [section 3](/3-ruby/4-intelligence).

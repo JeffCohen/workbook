@@ -14,6 +14,8 @@ class PagesController < ApplicationController
     @topic   ||= topics.first
     @chapter ||= first_file(course['book'], @topic)
     @page    ||= first_file(course['book'], @topic, @chapter)
+    @chapter_number = @chapter.to_i
+    @page_number = @page.to_i
   end
 
   def current_page_local_path

@@ -5,3 +5,6 @@
       = render 'layouts/toc'
 
   = render 'main'
+
+  :javascript
+    $("h1").prepend("<span class='chapter-numbering'>#{@chapter_number}.#{@page_number}</span>")

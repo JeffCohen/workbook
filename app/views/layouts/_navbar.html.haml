@@ -9,7 +9,7 @@
     - if logged_in?
       %ul.navbar-nav
         - topics.each do |topic|
-          %li.nav-item= link_to cleanup(topic), topic_path(topic), class: 'nav-link topic-nav-link'
+          %li.nav-item= link_to cleanup(topic), topic_path(topic), class: "nav-link topic-nav-link #{'current' if topic == @topic}"
 
       %ul.navbar-nav
         - appendices.each do |appendix|
