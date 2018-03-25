@@ -1,9 +1,10 @@
 # Tools
 
-Students who took KIEI-924 and already have a GitHub account should skip to Step 2.
 
 
 ## STEP 1: Get a GitHub Account (5 minutes)
+
+*Students who took KIEI-924 and already have a GitHub account should skip to Step 2.*
 
 1. Use your NU email address for a free Student Pack at [GitHub.com](https://education.github.com/pack).  Use it to sign up
 for a free GitHub account.  They will probably require
