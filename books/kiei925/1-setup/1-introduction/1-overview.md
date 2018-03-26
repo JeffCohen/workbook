@@ -1,11 +1,13 @@
-# Setting Up Your Development Environment
+# Overview
 
 Every software engineer uses a set of tools necessary for constructing
-software.  This toolset is called a _development environment_, and
-the it can be daunting to set up an environment for the very first time.
+software.  This toolset is called a _development environment_. It can be
+daunting to set up an environment for the very first time.
 
-This quarter, we will experiment as a class by using a development environment
-that is entirely online, or "in the cloud" as they say.
+This quarter, we will experiment together by trying a development environment
+that is entirely online, or "in the cloud" as they say.  This will save us
+from having to install a lot of software on our personal laptops. It also means
+that we will do all of our work inside of a browser tab, which can feel odd at times.
 
 These instructions assume that you are using the latest version of
 Google Chrome.

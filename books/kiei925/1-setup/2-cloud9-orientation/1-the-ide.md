@@ -1,7 +1,7 @@
-# The Cloud9 IDE
+# Getting Oriented to the Cloud9 IDE
 
 Coding in a browser can be a bit frustrating for those of us accustomed to a
-full-featured code editor like Atom.  The IDE has a lot of moving parts, but most of them can be ignored most of the time.
+full-featured code editor like Atom.  The Cloud9 IDE has a lot of moving parts, but most of them can be ignored most of the time.
 
 
 Start by going to your Preferences, and slowly walk through everything to see
