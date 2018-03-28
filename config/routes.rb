@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get '/c9setup' => redirect('https://gist.github.com/JeffCohen/0b3682f57a318eec5559b180217a93b6/raw')
 
   get '/ping/:data' => 'utilities#ping'
+  get '/pings.json' => 'utilities#ping'
 
   %w(assignments labs videos tips).each do |r|
     resources r, only: [:index, :show]
