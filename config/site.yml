@@ -3,6 +3,8 @@ development:
   assignment_unlock_week: <%= ENV['BOOK_ASSIGNMENT_UNLOCK_WEEK'] || 10 %>
   require_login: <%= ENV["BOOK_REQUIRE_LOGIN"].present? || false %>
   coming_soon:
+    - '3-ruby'
+    - '4-rails'
   draft:
 
 test:

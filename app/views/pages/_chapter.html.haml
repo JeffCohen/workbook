@@ -1,6 +1,5 @@
 %ol
   - chapters.each_with_index do |chapter, index|
-    - Rails.logger.debug index
     %li.toc-chapter{class: "#{'current' if chapter == @chapter}"}
       - /(?<section_number>^\d+)\-(?<title>.+$)/ =~ chapter
       = link_to title.titleize, chapter_path(chapter: chapter)
