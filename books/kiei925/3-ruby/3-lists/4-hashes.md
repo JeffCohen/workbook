@@ -32,11 +32,11 @@ Use whichever one you want.
 
 ## Item Access
 
-You'll need to know the _key_ of the object you want to access.
-As always, we use square brackets `[ ]` to retrieve an item.
-You'll need to know the position of the character you want to access.
+Just like arrays, we use square brackets `[ ]` to retrieve an item.
+But instead of providing a zero-based position index,
+we provide the _key_ of the item.
 
-> Be sure to include the quotation marks in the key!
+> Don't forget the quotation marks!
 
 ``` irb
 irb(main)> favorites["color"]
@@ -45,4 +45,12 @@ irb(main)> favorites["number"]
 => 21
 irb(main)> favorites["sport"]
 => "Baseball"
+```
+
+If you attempt to use a key that doesn't exist in the hash,
+the return value will be `nil`:
+
+``` irb
+irb(main)> favorites["snack"]
+=> nil
 ```

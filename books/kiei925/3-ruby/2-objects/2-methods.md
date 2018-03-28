@@ -49,4 +49,4 @@ Cool, no?
 
 This all leads us to the following golden rule:
 
-_The class of an object determines that methods that can be applied to it._
+_The class of an object determines the available methods that can be applied to it._

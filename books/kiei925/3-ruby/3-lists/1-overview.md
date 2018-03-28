@@ -31,8 +31,6 @@ All lists in Ruby have three things in common:
 * They allow you to _access_ a single item from the list
 * They allow you to _iterate_ over each item in the list
 
-We will learn about iteration in [section 3](/3-intelligence).
-
 
 The following chapters will show how to obtain the length
 and access items of strings, arrays, and hashes.

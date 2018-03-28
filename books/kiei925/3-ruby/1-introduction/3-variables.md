@@ -12,8 +12,9 @@ irb(main)>
 
 ## Assigning Expressions to Variables
 
-It is often helpful to save the results of an expression into
-a named variable, so that you can use it later.
+We can ask the computer to remember the result of an expression so
+that we can refer to it again later.  In programming, we use a
+_variable_ to store the result of an expression.
 
 Here's a quick example.  Code along, making sure you type
 the code exactly as shown:
@@ -26,9 +27,11 @@ irb(main)> "Hi, " + name
 ```
 
 In the above example, we first _assigned_ the text `"Alice"` to
-a _variable_ called `name`.  This is very similar to the memory
-facility in your calculator, but we're allowed to have as many
-variables as we want by giving them unique names.
+a _variable_ called `name`.
+
+> This is just like the "M" button
+  on your calculator, but since we're allowed to have as many
+  variables as we want, by give them names.
 
 Here are more examples of how to use variables:
 

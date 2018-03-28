@@ -10,6 +10,12 @@ Search
   hits: integer
   created_at: datetime
 
+Ping
+  data: text
+  extra: text
+  created_at: datetime
+
+
   # Example table for a typical Book model.
   #
   # Book

@@ -57,5 +57,3 @@ irb(main)> "goodbye".upcase == "GOODBYE"
 irb(main)> "goodbye".upcase != "HELLO"
 => true
 ```
-
-We will talk more about the concept of truth in [section 3](/3-ruby/4-intelligence).

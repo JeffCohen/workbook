@@ -21,7 +21,7 @@ class SearchesController < ApplicationController
           by_freq: Search.where("created_at > ?", 30.days.ago).order('freq desc'),
           by_date: Search.where("created_at > ?", 30.days.ago).order('created_at desc')
         }
-        render json: data.to_json
+        render json: data.to_json(except: [:id, :created_at])
       end
     end
   end

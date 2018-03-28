@@ -16,11 +16,11 @@ You should see a new kind of prompt:
 irb(main)> _
 ```
 
-It looks similar to your command prompt, but this is the Ruby prompt.
+This looks similar to your command prompt, but this is the Ruby prompt.
 Whenever you see `irb`, you know that the computer is now
 expecting Ruby instructions, not command line instructions.
 
-To exit `irb` and go back to your command line simply type `exit`:
+To exit `irb` and get back to the command line simply type `exit`:
 
 ``` shell
 irb(main)> exit
@@ -28,7 +28,7 @@ irb(main)> exit
 
 Or if you prefer, you can press `CTRL-D` to exit.
 
-## Math Expressions
+## Numeric Expressions
 
 Ruby's grammar is based on the concept of _expressions_.  An expression
 is defined as an _object_ (a number or a piece of text), optionally followed by an _operator_ and
@@ -51,8 +51,7 @@ evaluated immediately.  If you have at least one operator in your
 expression, Ruby will do its best to evaluate your expression,
 simplifying it until it cannot be reduced any further.
 
-Try some more.  Be curious.  Here are a few
-examples:
+Try some more.  Be curious!  Here are a few examples:
 
 ``` irb
 irb(main)> 5 + 5 * 2

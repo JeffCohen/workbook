@@ -16,7 +16,7 @@ irb(main)>
 
 ## Arithmetic Operators
 
-Here's how we do basic math in Ruby.  We use an asterisk `*` for
+Let's do some basic mathematics.  We use an asterisk `*` for
 multiplication, `/` for division, `**` for exponentiation, and
 `%` for modulus (remainder arithmetic).
 

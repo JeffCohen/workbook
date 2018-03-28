@@ -8,7 +8,7 @@
 
 1. Use your NU email address for a free Student Pack at [GitHub.com](https://education.github.com/pack).  Use it to sign up
 for a free GitHub account.  They will probably require
-you to confirm your .edu email address, which might take minutes but sometimes
+you to confirm your .edu email address, which might take a few minutes but sometimes
 takes a day or two.  Watch your inbox for a confirmation email.
 
 2. Once you have signed in, go to your [Settings](https://github.com/settings/profile) and select your NU email

@@ -8,16 +8,18 @@ top to bottom.  This is what we mean when we refer to a
 "Ruby program" or "Ruby script" - just a text file containing
 many lines of Ruby expressions.
 
+If you aren't already comfortable with the Cloud9 IDE,
+[do that first](/1-setup/2-cloud9-orientation/1-the-ide) before
+continuing.
+
 ## Our First Ruby Script
 
 > This example uses string interpolation and
-multi-line text from the chapter on [Operators](/3-ruby/4-operators).
+multi-line text from the chapter on [Working With Text](3-ruby/2-objects/7-working-with-text).
 
-If you aren't already familiar with Atom,
-[do that chapter first](/1-setup/2-orientation/1-text-editor).
 
-Create a new file in Atom and
-type the following code:
+Create a new file and type these two lines of code (do not
+copy and paste):
 
 
 ``` ruby
@@ -25,10 +27,8 @@ lucky_number = rand(20)
 print "Today's lucky number is: #{lucky_number}. \n"
 ```
 
-Save it with the filename `lucky.rb` in a folder that's easy for your command
-prompt to get to, like `~/code/` (macOS) or `C:/code` (Windows).  
+Save it with the filename `lucky.rb`.  
 
-> We use the `.rb` file extension to remind ourselves that the file contains Ruby code.
 
 If you already have `irb` running in your command prompt, you should
 exit it now to get back to your command line:
@@ -39,10 +39,13 @@ irb(main)> exit
 
 (or you can press `CTRL-D` to exit.)
 
-Now, run your Ruby script directly from your command line, like this:
+> We use the `.rb` file extension to remind ourselves that
+the file contains Ruby code.
+
+Now, let's run our Ruby script from your command line, like this:
 
 ```
-ruby lucky.rb
+~/code$ ruby lucky.rb
 ```
 
 and you should see something like:
@@ -51,7 +54,7 @@ and you should see something like:
 Today's lucky number is: 25
 ```
 
-Run it again to see different numbers appear.
+_If you see something completely different, Ruby probably couldn't
+understand your code and displayed an error message instead.  Don't panic - this happens to all of us with great frequency.  Just read the error message slowly to get clues on what went wrong. Fix your code, save your file, and try to run it again._
 
-If you see something completely different, Ruby probably couldn't
-understand your code and displayed an error message instead.  Don't panic - this happens to all of us with great frequency.  Just read the error message slowly to get clues on what went wrong. Fix your code, save your file, and try to run it again.
+Run your script many times to see different numbers appear.

@@ -14,4 +14,4 @@ directions to the ballgame, check the weather outside, and more.
 
 Ruby instructions can only be understood by
 the Ruby interpreter, which must be activated from your computer's command prompt.  If you aren't familiar with the command prompt, stop now and spend
-the next ten minutes [learning the command prompt](/1-setup/2-orientation/2-terminal-windows).
+the next ten minutes [learning the command prompt](1-setup/2-cloud9-orientation/2-terminal-windows).
