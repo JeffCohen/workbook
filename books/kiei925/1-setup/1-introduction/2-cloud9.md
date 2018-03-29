@@ -20,7 +20,7 @@ You might be asked to change your password the first time you login.
 
 
 
-If all went well, you will probably see this (confusing) "console" screen:
+If all went well, you will see this (confusing) "console" screen:
 
 <p><%= image_for 'https://www.evernote.com/l/AAZuuP5AUOJIMIKJw2cXt0GchDw0d-5i8Q4B/image.png' %></p>
 
@@ -34,11 +34,11 @@ Click the "Create Environment" button:
 
 <p><%= image_for 'https://www.evernote.com/l/AAZgtTp6UsVO6IPYU1Oe-P6gOFCwkE2_CHcB/image.png' %></p>
 
-Give it the name `classroom` and click "Next Step" (all lowercase, just as you see in the screenshot):
+Give it the name `classroom` (all lowercase, just as you see in the screenshot) and click "Next Step":
 
 <p><%= image_for 'https://www.evernote.com/l/AAZxSozFdJVC-7jKT2heSa29WghN23ym-6oB/image.png' %></p>
 
-Leave all of the defaults selected for "Environment settings" and just click "Next Step"
+Leave all of the defaults and just click "Next Step"
 again.  
 
 <p><%= image_for 'https://www.evernote.com/l/AAYL-CL8M1RN14Svi18k_sOVBQiW7jP0fCgB/image.png' %></p>
