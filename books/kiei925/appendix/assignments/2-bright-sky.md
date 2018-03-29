@@ -12,17 +12,16 @@ weather in Chicago.
 Except... it doesn't actually show the current conditions.  The
 output has been hardcoded by a lazy developer!
 
-Your job is to use the <a href="http://openweathermap.org/">OpenWeatherMap API</a>
+Your goal is to use the <a href="http://openweathermap.org/">OpenWeatherMap API</a>
 to display up-to-the-minute weather information for any city in the US.
 
 ## STEP 1. Open your `homework` environment.
 
-From your Cloud9 dashboard, open the environment.
+From your Cloud9 dashboard, open the IDE named `homework`.
 
-## STEP 3. Share Your Environment With Me
+## STEP 2. Share Your Environment With Me
 
-This way I will have access to your code if you need help, and I'll be able to
-retrieve your code at the deadline.
+I need access to your IDE for grading purposes (and to provide help should you request it).
 
 Click the Share button in the upper-right corner:
 
@@ -38,9 +37,9 @@ You'll get a confirmation dialog like this. Click `OK`:
 
 Click `Done` to dismiss the Share dialog.
 
-## STEP 2. Get the starter code
+## STEP 3. Get the starter code
 
-Go to you Terminal window and type in the following commands.  Be sure the current
+Go to your Terminal window and enter the following commands.  Always be sure the current
 directory matches what you see here before typing anything!
 
 ```
@@ -51,7 +50,7 @@ directory matches what you see here before typing anything!
 
 
 
-## STEP 3. Study the code
+## STEP 4. Study the code
 
 Run the script:
 
@@ -73,7 +72,7 @@ code that was written by someone else:
     to see the results.
 
 
-## STEP 4.  Display Chicago's current weather
+## STEP 5.  Display Chicago's current weather
 
 Now it's your turn.  
 
@@ -83,3 +82,9 @@ the correct outdoor temperature.
 and new code.  
 * Make sure the output sentence stays the same. Only the `0` should change
 to reflect the current temperature.
+
+
+## STEP 6.  Turn In Your Work
+
+Assuming you Step 2, there is no step 6. :-)  Once the deadline has passed, I will
+simpy log into your IDE and make a copy of your code for grading purposes.

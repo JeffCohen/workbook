@@ -9,9 +9,12 @@ that is entirely online, or "in the cloud" as they say: Amazon Cloud9.  This wil
 from having to install a lot of software on our personal laptops. It also means
 that we will do all of our work inside of a browser tab, which can feel odd at times.
 
-You can [read more about Cloud9 here](https://aws.amazon.com/cloud9/).  But don't
-get an account - I've already added you into a team account for our course.
+<hr>
 
-When you're ready, follow the [setup instructions for Cloud9](/1-setup/1-introduction/2-cloud9.md).  It will take about 8 minutes.
+You do not need to sign up for an account,
+because I've already added you into a team account that I've setup for KIEI-925.
+Howver, you can [read more about Cloud9 here](https://aws.amazon.com/cloud9/).  
+
+As soon as you're ready, follow the [setup instructions for Cloud9](/1-setup/1-introduction/2-cloud9.md).  It will take about 8 minutes.
 
 Once that's done, use your Cloud9 terminal to setup a few extra [tools](/1-setup/1-introduction/3-tools.md).
