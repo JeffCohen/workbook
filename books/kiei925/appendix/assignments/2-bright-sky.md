@@ -15,10 +15,33 @@ output has been hardcoded by a lazy developer!
 Your job is to use the <a href="http://openweathermap.org/">OpenWeatherMap API</a>
 to display up-to-the-minute weather information for any city in the US.
 
-## STEP 1. Get the code
+## STEP 1. Open your `homework` environment.
 
-Be sure to make sure the current directory matches what you see here
-before typing any commands!
+From your Cloud9 dashboard, open the environment.
+
+## STEP 3. Share Your Environment With Me
+
+This way I will have access to your code if you need help, and I'll be able to
+retrieve your code at the deadline.
+
+Click the Share button in the upper-right corner:
+
+<p><%= image_for 'https://www.evernote.com/l/AAaO30eOMxRKnp-6UtqjDElFqUVoPr6JdgQB/image.png' %></p>
+
+Enter the username `teacher` into the invitation box, then click `Invite`:
+
+<p><%= image_for 'https://www.evernote.com/l/AAYt6b9rhsdPppZ8NJDl4uQ3YAkOuHRpOK4B/image.png' %></p>
+
+You'll get a confirmation dialog like this. Click `OK`:
+
+<p><%= image_for 'https://www.evernote.com/l/AAaMGsOSAudLipdS7AtdtF--UftYSZzC98MB/image.png' %></p>
+
+Click `Done` to dismiss the Share dialog.
+
+## STEP 2. Get the starter code
+
+Go to you Terminal window and type in the following commands.  Be sure the current
+directory matches what you see here before typing anything!
 
 ```
 ~/code$ git clone https://www.github.com/kiei925/bright_sky
@@ -26,32 +49,6 @@ before typing any commands!
 ~/code/bright_sky$
 ```
 
-
-## STEP 2. Connect to Your GitHub Repository
-
-Create a new repository on GitHub.com named `bright_sky`.
-
-We will now point your `~/code/bright_sky` directory to your new repository (replace `YOUR-GITHUB-USERNAME` with your GitHub username below):
-
-```
-~/code/bright_sky$ git remote set-url origin https://www.github.com/YOUR-GITHUB-USERNAME/bright_sky.git
-```
-
-From now on, you can [commit and sync](1-setup/2-cloud9-orientation/3-git-cheat-sheet)
-as often as you'd like!  Just be sure to make your final commit and sync before the deadline.
-
-Here's a quick reminder of how to commit your code (take a snapshot of your code):
-
-```
-~/code/bright_sky$ git add -A
-~/code/bright_sky$ git commit -m "Your commit message goes here"
-```
-
-And here's how to sync:
-
-```
-~/code/bright_sky$ git push
-```
 
 
 ## STEP 3. Study the code
@@ -86,11 +83,3 @@ the correct outdoor temperature.
 and new code.  
 * Make sure the output sentence stays the same. Only the `0` should change
 to reflect the current temperature.
-* Commit and push your code to GitHub before the deadline.
-
-## STEP 5. Add Me As A Collaborator
-
-1. Go to your `bright_sky` repository on GitHub.com
-2. Click `Settings`
-3. Select `Collaborators and teams` (you may be asked to enter your GitHub password again).
-4. Under Collaborators, search for me by username: `jeffcohen` and click `Add Collaborator`.
