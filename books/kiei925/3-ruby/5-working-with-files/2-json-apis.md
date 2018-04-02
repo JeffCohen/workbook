@@ -15,7 +15,7 @@ get it quite easily in Ruby:
 
 ``` ruby
 require 'open-uri'
-json_text = open("https://feeds.divvybikes.com/stations/stations.json").read
+json_text = open("http://bikes.kiei925.com/stations.json").read
 ```
 
 This code does four things:
