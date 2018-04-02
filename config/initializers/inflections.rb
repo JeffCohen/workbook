@@ -23,4 +23,7 @@ ActiveSupport::Inflector.inflections(:en) do |inflect|
   inflect.acronym 'GitHub'
   inflect.acronym 'PID'
   inflect.acronym 'IDE'
+  inflect.acronym 'JSON'
+  inflect.acronym 'API'
+  inflect.acronym 'APIs'
 end

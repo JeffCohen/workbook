@@ -91,7 +91,7 @@ to reflect the current temperature.
 
 **OMG MAJOR HINTS:**
 
-* Don't try to come up with the solution all at once.  Coding is a like doing
+* Don't feel like you have to come up with the solution all at once.  Coding is a like doing
   a jigsaw puzzle. You have to work on one piece at a time.
 * If you haven't worked through [Arrays](http://localhost:5000/3-ruby/3-lists/3-arrays)
   and [Hashes](http://localhost:5000/3-ruby/3-lists/4-hashes) you should do that now.

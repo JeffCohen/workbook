@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-
   root 'tips#show'
 
   get '/book' => 'books#show'
