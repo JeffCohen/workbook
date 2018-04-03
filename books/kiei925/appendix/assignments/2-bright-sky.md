@@ -1,35 +1,33 @@
 # BrightSky
 
-This assignment is intended to reinforce the following concepts:
+This assignment is intended to:
 
-* Consuming JSON data from a third-party service
-* Using Ruby for conditional logic
-* How to retrieve data stored in Ruby hashes
+* Encourage experimentation and code discovery
+* Help you pay attention to details in the [Ruby unit](/3-ruby)
 
-You'll start with a prewritten Ruby script that displays the
-weather in Chicago. Except... it doesn't actually show the current conditions.  The
-temperature has been hardcoded by a lazy developer!
+You'll start with two prewritten Ruby scripts. One displays the current outdoor
+temperature, while the other shows live Divvy bike station data near campus.
 
-Your goal is to use the <a href="http://openweathermap.org/">OpenWeatherMap API</a>
-to display up-to-the-minute weather information for any city in the US.  The good
-news is, you don't have to know anything about how the API works.  
+Except... they doesn't actually show live data.  The output for both has been
+hardcoded by a lazy developer! Your job is to modify the code so that the scripts
+will retrieve live weather and Divvy data.  
 
-Instead, you will use your Ruby skills to:
+The good news is, you don't have to know anything about how
+the APIs work. Instead, you will use your Ruby debugging and exploration skills to:
 
-* explore the data structure that contains the weather data
-* pluck the temperature from the data
-* display it on the screen.
+* discover the data structures that contains live data
+* use Ruby hash syntax to retrieve the necessary data
 
-## STEP 1. Open your `homework` environment.
 
-From your Cloud9 dashboard, open the IDE named `homework`.
+## STEP 1. Prepare your `homework` environment.
 
-## STEP 2. Share Your Environment With Me
+From your Cloud9 dashboard, open your IDE named `homework` (if you don't know
+what I'm talking about, you need to [get setup for class](/1-setup)).
 
 I will need access to your IDE for grading purposes (and to provide help should you request it)
-so let's get that out of the way right now.
+so let's take care of that right now.
 
-First, click the Share button in the upper-right corner:
+Click the Share button in the upper-right corner:
 
 <p><%= image_for 'https://www.evernote.com/l/AAaO30eOMxRKnp-6UtqjDElFqUVoPr6JdgQB/image.png' %></p>
 
@@ -43,7 +41,14 @@ You'll get a scary confirmation dialog like this. Click `OK`:
 
 Click `Done` to dismiss the Share dialog.
 
-## STEP 3. Get the starter code
+## STEP 2. Do The Workbook
+
+This is actually the bulk of your homework this week: do the entire [Ruby unit](http://www.kiei925.com/3-ruby).  
+
+Don't just _read it_.  _Do it_.  Follow along and type in the sample code.  That's the
+only way you'll actually learn the material.
+
+## STEP 3. Get the code
 
 Go to your Terminal window and enter the following commands.  Always be sure the current
 directory matches what you see here before typing anything!
@@ -58,10 +63,10 @@ directory matches what you see here before typing anything!
 
 ## STEP 4. Study the code
 
-Run the script:
+Run the weather script:
 
 ```
-~/code/bright_sky$ ruby weather.rb
+~/code/bright_sky$ ruby 1_weather.rb
 It is 0 degrees outside.
 ```
 
@@ -77,30 +82,41 @@ code that was written by someone else:
     Ruby interpreter.  You can then try to reproduce your code, one line at a time,
     to see the results.
 
+Now run the Divvy script:
+
+```
+~/code/bright_sky$ ruby 2_divvy.rb
+The nearest station is Buckingham Fountain.
+If you need to rent a bike, there are 5 bikes available right now.
+If you need to return a bike, there are 3 open docking spaces right now.
+```
+
+Again, all of that output has been hardcoded.  Feel free to peruse the source code.
+
 
 ## STEP 5.  Display Chicago's current weather
 
 Now it's your turn.  
 
-* Take ownership of the code. Modify it so that it displays
-the correct outdoor temperature.  
-* You are free to change the code that's there and
-and new code.  
-* Make sure the output sentence stays the same. Only the `0` should change
-to reflect the current temperature.
+* Take ownership of the code. Modify `1_weather.rb` so that it displays
+the correct outdoor temperature, and modify `2_divvy.rb` to display information
+for the Divvy bike station that's nearest the Global Hub.
+* You are free to change the code up to line 17 (you can also insert as many new lines of code
+  as you want before that).  
+* You may NOT change the code below the comments that say `# Do not touch the code below this line.`.
 
 **OMG MAJOR HINTS:**
 
 * Don't feel like you have to come up with the solution all at once.  Coding is a like doing
   a jigsaw puzzle. You have to work on one piece at a time.
 * If you haven't worked through [Arrays](http://localhost:5000/3-ruby/3-lists/3-arrays)
-  and [Hashes](http://localhost:5000/3-ruby/3-lists/4-hashes) you should do that now.
-* Does something feel invisible, like the contents of a variable?  Make it visible!
+  and [Hashes](http://localhost:5000/3-ruby/3-lists/5-hashes) you should do that now.
+* If something feels invisible, like the contents of a variable, make it visible!
   See the chapter on [Ruby Scripts](3-ruby/4-intelligence/1-scripts) for a quick example.
-* Use `irb` to reproduce your variables in an isolated context to play with them
-  and perform experiments.
+* Use an extra `irb` session in a separate Terminal window to reproduce your
+  variables in an isolated context, play with Ruby expressions, and and perform experiments.
 
 ## STEP 6.  Turn In Your Work
 
 If you completed Step 2, there is no step 6. :-)  When the deadline has passed, I will
-grab a copy of your code and post your grade in Canvas.
+grab a copy of your code for grading.
