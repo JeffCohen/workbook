@@ -3,20 +3,20 @@
 This assignment is intended to:
 
 * Encourage experimentation and code discovery
-* Help you pay attention to details in the [Ruby unit](/3-ruby)
+* Help you learn the essentials from the [Ruby unit](/3-ruby)
 
 You'll start with two prewritten Ruby scripts. One displays the current outdoor
 temperature, while the other shows live Divvy bike station data near campus.
 
-Except... they doesn't actually show live data.  The output for both has been
+Except... the output for both has been
 hardcoded by a lazy developer! Your job is to modify the code so that the scripts
 will retrieve live weather and Divvy data.  
 
 The good news is, you don't have to know anything about how
-the APIs work. Instead, you will use your Ruby debugging and exploration skills to:
+the APIs work. Instead, you will use Ruby debugging and exploration skills to:
 
-* discover the data structures that contains live data
-* use Ruby hash syntax to retrieve the necessary data
+* discover the data structures that contain live data
+* use Ruby hashes to retrieve the necessary data
 
 
 ## STEP 1. Prepare your `homework` environment.
