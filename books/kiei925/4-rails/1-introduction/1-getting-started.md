@@ -57,14 +57,5 @@ our command prompt to that directory, and then run the `bundle install` command:
 It may take a couple minutes for the `bundle install` command to do its work.
 If all goes well, you'll see the words "Bundle complete!" near the end.
 
-Now we start the application by starting the "server":
-
-```
-~/code/myapp$ rails server
-```
-
-Then, click `Preview` in your Cloud9 toolbar.  The small pane that opens
-will be too small, so click the `Browser` popout button to open a full-size
-browser tab.  You should see the home page of the application.
-
-**IMPORTANT**: Press `CTRL-C` when you want to stop the server.  
+To use the application in your browser, see the next section
+on how to start [the Rails Server](/4-rails/1-introduction/2-the-rails-server).
