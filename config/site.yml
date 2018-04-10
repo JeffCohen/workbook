@@ -3,10 +3,6 @@ development:
   assignment_unlock_week: <%= ENV['BOOK_ASSIGNMENT_UNLOCK_WEEK'] || 10 %>
   require_login: <%= ENV["BOOK_REQUIRE_LOGIN"].present? || false %>
   coming_soon:
-    - '4-embedded-ruby'
-    - '5-resources'
-    - '6-input'
-
 
 test:
   book: 'law713'
@@ -18,5 +14,7 @@ production:
   assignment_unlock_week: <%= ENV['BOOK_ASSIGNMENT_UNLOCK_WEEK'] %>
   require_login: <%= ENV["BOOK_REQUIRE_LOGIN"].present? %>
   coming_soon:
-    - '4-rails'
+    - '4-embedded-ruby'
+    - '5-resources'
+    - '6-input'
   draft:
