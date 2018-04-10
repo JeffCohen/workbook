@@ -39,3 +39,21 @@ Or simply type the name of a model to see what columns it has.
 Loading development environment (Rails 5.1.6)
 2.4.1 :001>
 ```
+
+## Quitting the Console
+
+To end the console session and return to the Terminal command prompt,
+use the `exit` command (or you can just press `CTRL-D`):
+
+```
+2.4.1 :001> exit
+
+~/code/myapp$
+```
+
+If you see a long blurb of crazy error messages whenever you exit
+the console, you can fix this Cloud9 issue with the following command:
+
+```
+~/code/myapp$ rvm fix-permissions user
+```
