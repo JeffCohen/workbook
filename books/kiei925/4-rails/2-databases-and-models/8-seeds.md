@@ -1,7 +1,7 @@
 # Database Seeding
 
-Using the Rails console to create rows by hand can be tedious.  
-Sometimes it's helpful to have a Ruby script that can automate
+Using the Rails console to create rows by hand can be tedious.
+It's common to have a Ruby script that can automate
 the process of "seeding" the database with an initial set of data.
 
 Rails supports this via the `db/seeds.rb` file.  This file can

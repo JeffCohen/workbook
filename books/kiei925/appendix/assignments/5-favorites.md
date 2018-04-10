@@ -11,7 +11,6 @@ This assignment is intended to reinforce the following concepts:
 Here are some examples:
 
 * Famous Chicago landmarks or architectural sights
-* Your favorite Supreme Court cases
 * Your favorite restaurants
 * Your favorite books
 * Things you have at home that you want to sell

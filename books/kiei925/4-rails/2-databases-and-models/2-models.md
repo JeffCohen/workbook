@@ -5,11 +5,14 @@ in our real world.  All software is an attempt to solve a problem
 that exists in the real world, and will need to represent the
 real-world problem domain in software.
 
-Models are typical sources of data, so in our web application
-they not only have the responsibility to represent a real-world
-thing, they also act as the source of data.
+Models also act as sources of data.  Each model is connected
+to a table in our database.
 
-We use the `db/models.yml` file to define our models:
+## Defining Your Models
+
+We use the `db/models.yml` file to define our model schema.
+Here we've created two models:
+
 
 ``` yml
 Movie
@@ -24,6 +27,3 @@ Director
   dob: date
   photo_url: text
 ```
-
-Here we've created two models.  Each model will represent one
-table in our database.
