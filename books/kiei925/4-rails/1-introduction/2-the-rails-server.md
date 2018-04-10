@@ -20,11 +20,17 @@ On Cloud9, we need to follow a three-step recipe:
    ~/code/myapp$ rails server
    ```
 
-2. Click `Preview` in your Cloud9 toolbar.  This will open a small pane
-near your Terminal window.
+   <%= image_for 'https://www.evernote.com/l/AAbqUsG32h5CpYpFXkvt6cInrNV_MP38FeQB/image.png' %>
 
-3. This small pane that opens will be too small, so click the `Browser` popout button to open a full-size
-browser tab.  You should now see the home page of your application.
+2. Click `Preview` in your Cloud9 toolbar.  This will open a small pane
+   near your Terminal window.
+
+   <%= image_for 'https://www.evernote.com/l/AAYFFkz5LMBBWph0m4la-USh47LeOS_oLQcB/image.png' %>
+
+3. This small pane that opens will be too small, so click the `Browser` popout button
+   to open a full-size browser tab.  You should now see the home page of your application.
+
+   <%= image_for 'https://www.evernote.com/l/AAZM_WHNQAlKvYWMr7EoZZJMV1K3VUPlJzYB/image.png' %>
 
 ## How To Stop The Server: `CTRL-C`
 
