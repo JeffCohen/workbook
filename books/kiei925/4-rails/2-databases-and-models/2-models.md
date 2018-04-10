@@ -23,3 +23,13 @@ Book
 Publisher
   name: text
 ```
+
+**Be careful**!
+
+* The model names (`Book`, `Publisher`) must start in column 1
+* The model names (`Book`, `Publisher`) must start with a capital letter
+* The model names (`Book`, `Publisher`) should be _singular nouns_
+* Attributes (`title`, `author`, `hardcover`, and `name`) must be _lowercase_
+* Attributes must be indented and by exactly the same amount
+* There must be a colon `:` between the attribute name `title` and
+  its data type, `text`
