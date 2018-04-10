@@ -15,15 +15,11 @@ Here we've created two models:
 
 
 ``` yml
-Movie
+Book
   title: text
-  year: integer
-  poster_url: text
-  director_id: integer
-  streamable: boolean
+  author: text
+  hardcover: boolean
 
-Director
+Publisher
   name: text
-  dob: date
-  photo_url: text
 ```
