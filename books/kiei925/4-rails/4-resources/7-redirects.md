@@ -8,9 +8,11 @@ However, sometimes we don't need to use an entirely new page for the response.
 Sometimes we want to tell the browser to fetch another, pre-existing resource
 instead.
 
-This is called _redirection_.  Suppose we're building a to-do list application,
-and the user wants to create a new item. We could implement this by creating
-an HTML view that looks like this:
+This is called _redirection_.  
+
+To demonstrate how to use redirection, suppose we're building a to-do list application,
+and the user has clicked on a button to create a new item. We could implement this
+by using an HTML view that creates a new row in the database like this:
 
 ``` erb
 <%%# This is app/views/items/create.html.erb %>
@@ -23,11 +25,12 @@ an HTML view that looks like this:
 </p>
 ```
 
-This works, but users might not want this confirmation page.  They could
-get tired of  having to click another link to get back to their to-do list.
+This works, but users might not want this extra confirmation page.  They could
+get tired of having to click another link to get back to their to-do list.
 
-Instead, we can dispense with the HTML entirely.  After creating the new item,
-we can have the browser automatically navigate them back to `/items`.  This _redirection_
+Instead, we can dispense with the HTML entirely.  We can use a Ruby function
+to create the new row and then respond with an HTTP status code that instructs
+the browser to navigate back to `/items`.  This _redirection_
 is accomplished by moving our Ruby code to the controller:
 
 ``` ruby

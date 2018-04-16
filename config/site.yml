@@ -14,7 +14,5 @@ production:
   assignment_unlock_week: <%= ENV['BOOK_ASSIGNMENT_UNLOCK_WEEK'] %>
   require_login: <%= ENV["BOOK_REQUIRE_LOGIN"].present? %>
   coming_soon:
-    - '4-embedded-ruby'
-    - '5-resources'
-    - '6-input'
+    - '7-advanced-resources'
   draft:

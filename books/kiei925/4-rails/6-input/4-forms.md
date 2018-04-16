@@ -75,4 +75,4 @@ The following HTTP methods are defined but HTML5 only supports two of them:
 
 To work around this problem, the Rails framework provides [view helpers](/4-rails/5-input/5-view-helpers) such as `<%%= form_tag %>`,
 which is a replacement for the standard `<form>` element.  `form_tag` supports
-all four HTTP methods.
+all four HTTP methods, but is beyond the scope of this workbook.
