@@ -40,38 +40,34 @@ When we do something like this in `config/routes.rb`:
 
 ``` ruby
 
-resources :books
+get '/books/:asin' => 'books#show'
 
 ```
 
-we also have a URL that supports a dynamic segment in the second part
-of the URL path:
+then our app will accept URLs like this:
 
 ```
-http://localhost:3000/books/9
+http://localhost:3000/books/123
 ````
 
-Here, the `9` is the second path component and it is allowed to be dynamic: it can be anything.  Rails will capture this value in the `params` hash like this:
+The second path component and is allowed to be dynamic: it can be anything.  Rails will
+route this URL to the `books#show` action, and in addition, it will
+capture the dynamic value and construct the `params` hash like this:
 
 ```
-Parameters: { "id" => "9" }
+Parameters: { "asin" => "123" }
 ```
 
-This means that our code can retrieve the actual value in the dynamic
-segment like this:
+Our code can retrieve the actual value in the dynamic segment like this:
 
 ``` ruby
-params["id"]
+params["asin"]
 ```
 
-Here's an example of how we would apply this to our application:
+Here's an example of how we could apply this to our application:
 
 ``` erb
 <%%# This is app/views/books/show.html.erb %>
 
-<%% book = Book.find_by(id: params["id"]) %>
+<%% book = Book.find_by(asin: params["asin"]) %>
 ```
-
-Our variable `book` now refers to the row in the database that was
-indicated in the URL.  In other words, our `show.html.erb` will automatically
-reflect the book identified by the URL.
