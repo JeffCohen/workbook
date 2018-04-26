@@ -349,7 +349,7 @@ an action to delete the item (you are welcome to use nicer HTML than this):
   <a href="/stations/<%%= station.id %>">
     <%%= station.name %>
   </a>
-  <a href="/stations/<%%= stations.id %>">Delete</a>
+  <a href="/stations/<%%= stations.id %>/delete">Delete</a>
 </li>
 ```
 
