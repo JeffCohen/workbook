@@ -27,4 +27,5 @@ ActiveSupport::Inflector.inflections(:en) do |inflect|
   inflect.acronym 'JSON'
   inflect.acronym 'API'
   inflect.acronym 'APIs'
+  inflect.acronym 'IMDB'
 end
