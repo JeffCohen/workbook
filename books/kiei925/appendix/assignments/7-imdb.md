@@ -16,8 +16,8 @@ rails applications in your environment.
 ```
 ~/code$ git clone https://www.github.com/kiei925/movies
 ~/code$ cd movies
-~/code/taxi_service$ bundle install --without production
-~/code/taxi_service$ rails db:seed
+~/code/movies$ bundle install --without production
+~/code/movies$ rails db:seed
 ```
 
 ## STEP 3. Study the code
@@ -38,12 +38,12 @@ resources (movies and directors) without any problems.
 **Important Rules:**
 
 1. Movies can be associated with directors.
-1. If a movie is associated to a director, the movie's details page should
+2. If a movie is associated to a director, the movie's details page should
   include the director's name and their filmography (links to all other movies
     by the same director)
-1. The director details page should display the director's name and entire
-   filmography (links to all movies by that director).
-1. If a director is removed from the database, any movies that had been
+3. The director details page should display the director's name and their entire
+   filmography (i.e. display links to all movies by that director).
+4. If a director is removed from the database, any movies that had been
   associated to that director should have their `director_id` value set to `nil`.
 
 
@@ -51,7 +51,7 @@ resources (movies and directors) without any problems.
 
 Maximum possible: 30 points
 
-* 6 points for showing "Other movies by this director" on a movie's details page
+* 6 points for showing "Other movies by this director" on the movie's details page
 * 2 points for seeing a list of directors
 * 4 points for a director's details page that includes their filmography
 * 2 points for adding a director
