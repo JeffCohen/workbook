@@ -24,44 +24,37 @@ rails applications in your environment.
 
 Notice that two models have already been implemented for you, `Movie` and `Director`.
 
-The user interface has been started for you.  Start the server and
-click around to become familiar with the interface.
+Start the server and click around to become familiar with the user interface.
 
-HOWEVER, you'll quickly find that not everything works perfectly.  In fact,
-you'll probably run into some error messages and non-working functionality.
+You'll quickly find that not everything has been implemented.  The Movies
+resource seems complete, but the Directors resource is yet to be coded.
 
 
-## STEP 4.  Fix The Code
+## STEP 4.  Finish The Code
 
-Fix and enhance the code as necessary so that users can "CRUD" both
+Enhance the code as necessary so that users can "CRUD" both
 resources (movies and directors) without any problems.
 
 **Important Rules:**
 
 1. Movies can be associated with directors.
 1. If a movie is associated to a director, the movie's details page should
-  include relevant director information, and links to all other movies by
-  the same director.
-1. The director details page should display that directory's filmography.
+  include the director's name and their filmography (links to all other movies
+    by the same director)
+1. The director details page should display the director's name and entire
+   filmography (links to all movies by that director).
 1. If a director is removed from the database, any movies that had been
   associated to that director should have their `director_id` value set to `nil`.
-
 
 
 ## Grading Rubric
 
 Maximum possible: 30 points
 
-* 2 points for seeing a list of movies
-* 4 points for seeing the details of a single movie
-* 5 points for adding a movie associated to a director
-* 2 points for updating the details of a single movie
-* 2 points for deleting a single movie
-
-<hr>
-
+* 6 points for showing "Other movies by this director" on a movie's details page
 * 2 points for seeing a list of directors
-* 4 points for seeing the details of a single director
+* 4 points for a director's details page that includes their filmography
 * 2 points for adding a director
-* 2 points for updating the details of a single director
-* 5 points for deleting a single director
+* 2 points for updating the name of a director
+* 8 points for deleting a single director
+* 6 points for adherence to the Bootstrap framework for all UI elements
