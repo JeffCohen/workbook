@@ -3,7 +3,7 @@
 Heroku.com provides an easy way to begin to learn about how to "deploy" a web
 application to a URL that's publicly available on the internet.
 
-### Prerequisites
+## Prerequisites
 
 You will need:
 
@@ -13,7 +13,7 @@ You will need:
 Once your code is in GitHub, you can use Heroku to host a production
 database and run a production-quality server environment.
 
-### Concepts
+## Concepts
 
 Your Heroku account provides a complete computer that's ready to
 do nothing except host your Ruby code and run `rails server` on it.
@@ -25,11 +25,11 @@ Remember these important ideas!
 * You will have to learn Heroku's equivalent for accessing `rails console`
   and viewing the server log!
 
-### Deployment with Heroku
+## Deployment with Heroku
 
 Start by using your Heroku dashboard to create a Heroku "app":
 
-<p><% image_for 'https://www.evernote.com/l/AAawVmyu6SdAL43AWdfOiELxJ6wK4j95Tg8B/image.png' %></p>
+<p><%= image_for 'https://www.evernote.com/l/AAawVmyu6SdAL43AWdfOiELxJ6wK4j95Tg8B/image.png' %></p>
 
 You can try to choose an application name, or leave it blank to have Heroku
 generate a random one for you.
@@ -46,7 +46,7 @@ attempt your first deploy:
 
 <p><%= image_for 'https://www.evernote.com/l/AAaPfL4D8jRENYYsSm-HtHSuAAdumM9Av9UB/image.png' %></p>
 
-### Using the Console and Logs
+## Using the Console and Logs
 
 Use the menu at the top-right to get to extra utility functions, such as
 running Rails commands and viewing the server logs.
@@ -56,7 +56,7 @@ running Rails commands and viewing the server logs.
 Heroku is always updating these utilities so I can't provide exact details on
 how they work.  Use your computational thinking skills to discover how to use them.
 
-### Seeding Your Database
+## Seeding Your Database
 
 Your database won't be automatically seeded, so after your first deploy is
 successful, use the Console utlity in Heroku to start a Rails console.
