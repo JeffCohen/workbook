@@ -27,10 +27,10 @@ Remember these important ideas!
 
 ## Preparing Your Rails Application for Heroku
 
-When your appliation runs on Heroku, it will be provided with
+When your application runs on Heroku, it will be provided with
 a different kind of database system called Postgresql.  We need to configure
 the application so that Rails will know to connect to it, but only
-when it's running in "prodution mode".
+when it's running in "production mode".
 
 To do this, open your `Gemfile` and add these lines near the top or bottom:
 
