@@ -25,6 +25,39 @@ Remember these important ideas!
 * You will have to learn Heroku's equivalent for accessing `rails console`
   and viewing the server log!
 
+## Preparing Your Rails Application for Heroku
+
+When your appliation runs on Heroku, it will be provided with
+a different kind of database system called Postgresql.  We need to configure
+the application so that Rails will know to connect to it, but only
+when it's running in "prodution mode".
+
+To do this, open your `Gemfile` and add these lines near the top or bottom:
+
+```
+group :production do
+  gem 'pg', '0.20'
+end
+```
+
+Save the file, then run this from your terminal (as usual, make sure you current directory
+is your application's directory):
+
+```
+bundle install --without production
+```
+
+This will update the `Gemfile.lock` file.
+
+Commit your changes and push to GitHub:
+
+```
+git add -A
+git commit -m "Prepare for Heroku"
+git push origin master
+```
+
+
 ## Deployment with Heroku
 
 Start by using your Heroku dashboard to create a Heroku "app":
