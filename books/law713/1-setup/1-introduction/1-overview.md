@@ -1,5 +1,7 @@
 # Setting Up Your Development Environment
 
+Howdy!
+
 Every software engineer uses a set of tools necessary for constructing
 software.  This toolset is called a _development environment_, and
 the it can be daunting to set up an environment for the very first time.

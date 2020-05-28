@@ -17,3 +17,9 @@
 //= require highlight
 //= require markdown
 //= require assignments
+
+document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === 'visible') {
+    window.location.reload()
+  } 
+});

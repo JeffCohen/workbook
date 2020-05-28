@@ -1,5 +1,5 @@
 development:
-  book: <%= ENV['BOOK'] || 'law713 '%>
+  book: <%= ENV['BOOK'] || 'er '%>
   assignment_unlock_week: <%= ENV['BOOK_ASSIGNMENT_UNLOCK_WEEK'] || 10 %>
   require_login: <%= ENV["BOOK_REQUIRE_LOGIN"].present? || false %>
   coming_soon:

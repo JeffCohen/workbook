@@ -32,7 +32,7 @@
 
     .container-fluid.pt-3#footer.text-muted.border-top
       %p.float-right
-        &copy;2018 #{link_to 'Jeffrey Cohen', 'https://www.jeffcohenonline.com'}.
+        &copy;#{Date.current.to_date.year} #{link_to 'Jeffrey Cohen', 'https://www.jeffcohenonline.com'}.
         %span.pl-3
           This is version
           = Rails.configuration.version

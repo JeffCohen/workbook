@@ -2,7 +2,7 @@ module ApplicationHelper
 
   def bonus
     '<div class="alert alert-primary" role="alert">
-      This is a bonus material.
+      This is bonus material.
     </div>'
   end
 
@@ -30,7 +30,7 @@ module ApplicationHelper
 
   def markdown(text)
     md = ERB.new(text).result(binding)
-    html = CommonMarker.render_html(md, :GITHUB_PRE_LANG, [:table, :autolink])
+    html = CommonMarker.render_html(md, [:GITHUB_PRE_LANG, :UNSAFE], [:table, :autolink])
     html.html_safe
   end
 
