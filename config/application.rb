@@ -19,7 +19,6 @@ Bundler.require(*Rails.groups)
 
 module Workbook
   class Application < Rails::Application
-    config.hosts << "3000-d37af591-0094-4927-91f2-18c50b3b41f6.ws-us02.gitpod.io"
     config.load_defaults 6.0
     config.site = config_for(:site) rescue nil
     config.book = YAML.load_file(File.join(Rails.root, 'books', config.site['book'], 'config.yml'))

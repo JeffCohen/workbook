@@ -1,6 +1,8 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  config.hosts << "3000-d37af591-0094-4927-91f2-18c50b3b41f6.ws-us02.gitpod.io"
+    
   config.action_view.logger = nil
   # config.lograge.enabled = true
   # config.lograge.formatter = CustomLogFormatter.new
