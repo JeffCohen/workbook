@@ -3,23 +3,25 @@
     color: rgba(0, 128, 128, 0.4);
     text-decoration: none;
   }
-  font-size: 48px;
+  // font-size: 2em;
   font-family: 'Crimson Text', serif;
-  height: 60vh;
-  color: rgba(0, 128, 128, 0.3);
+  color: rgba(3, 75, 75, 0.4);
+  height: 70vh;
 
   .tiny {
-    font-size: 22px;
     font-style: italic;
     color: rgba(0, 128, 128, 0.4);
   }
 }
 
 .tip-list {
-  height: 80vh;
+  height: 60vh;
+
+  font-family: 'Crimson Text', serif;
   ol li {
-    font-size: 36px;
     list-style-position: inside;
-    line-height: 68px;
+    line-height: 1.6em;
+    color: rgba(3, 75, 75, 0.4);
+
   }
 }
