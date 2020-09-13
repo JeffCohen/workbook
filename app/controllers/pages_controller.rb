@@ -16,6 +16,11 @@ class PagesController < ApplicationController
     @page    ||= first_file(course['book'], @topic, @chapter)
     @chapter_number = @chapter.to_i
     @page_number = @page.to_i
+    # logger.debug "INFO:"
+    # logger.debug "book:    #{course['book']}"
+    # logger.debug "topic:   #{@topic}"
+    # logger.debug "chapter: #{@chapter}"
+    # logger.debug "page:    #{@page}"
   end
 
   def current_page_local_path
@@ -39,6 +44,7 @@ class PagesController < ApplicationController
     begin
       filename = current_page_local_path
       filename += ".md" unless filename.ends_with?('.md')
+      logger.debug "Filename: #{filename}"
       @content = IO.read(filename)
     rescue
       redirect_to root_url
