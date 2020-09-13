@@ -6,6 +6,11 @@ li a.nav-link.topic-nav-link.current:hover {
 
 .navbar {
   padding: 0 1.0em;
+
+  input {
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
 }
 
 .chapter-link a.nav-link {
