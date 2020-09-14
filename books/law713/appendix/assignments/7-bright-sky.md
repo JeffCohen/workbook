@@ -104,7 +104,7 @@ Now it's your turn.  Take ownership of the code and modify it.
 You'll notice a line of code that looks like this:
 
 ``` erb
-<%% api_key = '4ce6f502d38ddae567bf1702b05e168c' %>
+<%% api_key = '4ce6f502d38ddae567bf1702b05e168x' %>
 ```
 
 That's my API key.  Each person should have their own API key.
